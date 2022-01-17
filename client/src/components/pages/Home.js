@@ -30,10 +30,10 @@ const Home = (props) => {
 					{APIContext.usersData.data.map((element) => (
 						<li key={nanoid()}>
 								<span>
-									{`NAME: ${element.user_name} - `}
+									{`NAME: ${element.name} - `}
 								</span>
 							<span>
-									{`EMAIL: ${element.user_email}`}
+									{`EMAIL: ${element.email}`}
 								</span>
 						</li>
 					))}
