@@ -1,5 +1,5 @@
 const Users = {
-	User1: {
+	User: {
 		id: "1",
 		firstname: "Jason",
 		lastname: "Day",

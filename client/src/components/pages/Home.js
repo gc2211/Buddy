@@ -16,13 +16,13 @@ const Home = (props) => {
 			<H2>Home</H2>
 
 			<Section
-				firstname={textData.Users1.firstname}
-				lastname={textData.Users1.lastname}
+				firstname={textData.User.firstname}
+				lastname={textData.User.lastname}
 			/>
 
 			<Section
-				age={textData.User1.age}
-				country={textData.User1.country}
+				age={textData.User.age}
+				country={textData.User.country}
 			/>
 
 			{APIContext.usersIsFetched

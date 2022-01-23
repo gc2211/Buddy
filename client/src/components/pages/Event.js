@@ -4,7 +4,7 @@ import H2 from "../atoms/H2";
 import P from "../atoms/P";
 import logger from "../../utils/logger";
 
-const About = () => {
+const Event = () => {
 
 	const myContext = useContext(context);
 
@@ -32,4 +32,4 @@ const About = () => {
 	)
 };
 
-export default About;
+export default Event;
