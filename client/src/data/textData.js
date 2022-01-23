@@ -1,12 +1,14 @@
-const textData = {
-	aboutSection1: {
-		title: "One section",
-		text: "Some text coming from /data/textData.js and passed down as props"
+const Users = {
+	User1: {
+		id: "1",
+		firstname: "Jason",
+		lastname: "Day",
+		age:35,
+		country:"USA",
+		city:"Miami",
+		province:"FL",
+		image_url:"https://pga-tour-res.cloudinary.com/image/upload/c_fill,d_headshots_default.png,dpr_3.0,f_auto,g_face:center,h_350,q_auto,w_280/headshots_28089.png"
 	},
-	aboutSection2: {
-		title: "Another section",
-		text: "The following data comes from an APIContext that stores data fetched from the API"
-	}
 };
 
-export default textData;
+export default Users;

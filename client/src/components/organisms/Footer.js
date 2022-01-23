@@ -4,9 +4,8 @@ import P from "../atoms/P";
 const Footer = () => {
 	return (
 		<StyledFooter>
-			<P>This is a footer</P>
-			<P>Use this template as a starting point</P>
-		</StyledFooter>
+			<P>Buddy</P>
+ 		</StyledFooter>
 	)
 };
 

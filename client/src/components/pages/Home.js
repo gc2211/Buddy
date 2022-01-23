@@ -16,13 +16,13 @@ const Home = (props) => {
 			<H2>Home</H2>
 
 			<Section
-				title={textData.aboutSection1.title}
-				text={textData.aboutSection1.text}
+				firstname={textData.Users1.firstname}
+				lastname={textData.Users1.lastname}
 			/>
 
 			<Section
-				title={textData.aboutSection2.title}
-				text={textData.aboutSection2.text}
+				age={textData.User1.age}
+				country={textData.User1.country}
 			/>
 
 			{APIContext.usersIsFetched
@@ -30,10 +30,10 @@ const Home = (props) => {
 					{APIContext.usersData.data.map((element) => (
 						<li key={nanoid()}>
 								<span>
-									{`NAME: ${element.name} - `}
+									{`FIRSTNAME: ${element.firstname} - `}
 								</span>
 							<span>
-									{`EMAIL: ${element.email}`}
+									{`LASTNAME: ${element.lastname}`}
 								</span>
 						</li>
 					))}
