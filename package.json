@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlosaore/heroku-cleardb-fullstack-starter.git"
+    "url": "https://github.com/gc2211/heroku"
   },
   "keywords": [
     "fullstack",
@@ -28,12 +28,13 @@
   "author": "Carlos Orellana",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/carlosaore/heroku-cleardb-fullstack-starter/issues"
+    "url": "https://github.com/gc2211/heroku"
   },
-  "homepage": "https://github.com/carlosaore/heroku-cleardb-fullstack-starter#readme",
+  "homepage": "https://github.com/gc2211/heroku",
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "joi": "^17.5.0",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
