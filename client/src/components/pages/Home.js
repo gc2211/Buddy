@@ -1,6 +1,5 @@
 import {useContext} from 'react';
 import {context} from "../../context/APIProvider";
-import H2 from "../atoms/H2";
 
 const Home = (props) => {
 
@@ -10,8 +9,7 @@ const Home = (props) => {
 
 	return (
 		<main>
-			<H2>Home</H2>
-
+            <img src='../public/buddy.png' alt='logo'></img>
 
 			{APIContext.usersIsFetched
 				? <ol>

@@ -1,31 +1,12 @@
-import {useContext} from 'react';
-import {context} from "../../context/MyProvider";
 import H2 from "../atoms/H2";
-import logger from "../../utils/logger";
 
 const Event = () => {
 
-	const myContext = useContext(context);
 
 	return (
 		<main>
-			<H2>About</H2>
-			<p>The following count comes from a state kept in a general purpose context.</p>
-			<H2>{`Count: ${myContext.count}`}</H2>
-			<button
-				onClick={() => {
-					myContext.setCount(prevState => prevState + 1);
-				}}
-			>
-				+1
-			</button>
-			<p>The following button logs "Hello world!" to the console thanks to a function provided by
-				/utils/logger.js</p>
-			<button
-				onClick={() => logger("Hello world!")}
-			>
-				Log
-			</button>
+			<H2>Upcoming events</H2>
+			<p>Find buddies and rounds of golf to be played in your area</p>
 		</main>
 
 	)
