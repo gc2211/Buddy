@@ -35,7 +35,7 @@ const Home = (props) => {
 				</ol>
 				: <p>loading...</p>}
 		</main>
-	)
+	)	
 };
 
 export default Home;

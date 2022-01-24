@@ -1,4 +1,4 @@
-/*
+/* eslint-disable no-undef */
 mapboxgl.accessToken =
 "pk.eyJ1IjoiZ2MyMjExIiwiYSI6ImNreXJwZGhodjB3YnYydnA2OWIxNXRoNHQifQ.S_FOnV02_G9Zj4Bqv7FD8g";
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
@@ -31,5 +31,3 @@ function setupMap(center) {
 
   map.addControl(directions, "top-left")
 }
-
-export default Map;*/

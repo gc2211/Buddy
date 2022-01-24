@@ -20,6 +20,7 @@ router.get('/', (req, res) => {
 				res.status(200).send(data);
 			}
 		});
+		
 
 		//Realising the connection.
 		connection.release();
