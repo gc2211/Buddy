@@ -1,11 +1,15 @@
-import H3 from "../atoms/H3";
-import P from "../atoms/P";
+import H2 from "../atoms/H2";
 
 const Section = (props) => {
 	return (
 		<section>
-			<H3>{props.title}</H3>
-			<P>{props.text}</P>
+			<H2>{props.firstname}</H2>
+			<H2>{props.lastname}</H2>
+			<H2>{props.age}</H2>
+			<H2>{props.country}</H2>
+			<H2>{props.city}</H2>
+			<H2>{props.province}</H2>
+			<H2>{props.image_url}</H2>
 		</section>
 	)
 };

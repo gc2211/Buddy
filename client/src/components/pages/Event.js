@@ -1,7 +1,6 @@
 import {useContext} from 'react';
 import {context} from "../../context/MyProvider";
 import H2 from "../atoms/H2";
-import P from "../atoms/P";
 import logger from "../../utils/logger";
 
 const Event = () => {
@@ -12,7 +11,7 @@ const Event = () => {
 		<main>
 			<H2>About</H2>
 			<p>The following count comes from a state kept in a general purpose context.</p>
-			<P>{`Count: ${myContext.count}`}</P>
+			<H2>{`Count: ${myContext.count}`}</H2>
 			<button
 				onClick={() => {
 					myContext.setCount(prevState => prevState + 1);
