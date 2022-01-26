@@ -1,35 +1,21 @@
-/*
-mapboxgl.accessToken =
-"pk.eyJ1IjoiZ2MyMjExIiwiYSI6ImNreXJwZGhodjB3YnYydnA2OWIxNXRoNHQifQ.S_FOnV02_G9Zj4Bqv7FD8g";
-navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
-  enableHighAccuracy: true
-})
+/*import * as React from 'react';
+import ReactMapGL from 'react-map-gl';
 
-function successLocation(position) {
-  setupMap([position.coords.longitude, position.coords.latitude])
-}
+function Map() {
+  const [viewport, setViewport] = React.useState({
+    latitude: 37.7577,
+    longitude: -122.4376,
+    zoom: 8
+  });
 
-function errorLocation() {
-  setupMap([-2.24, 53.48])
-}
-
-function setupMap(center) {
-  const map = new mapboxgl.Map({
-    container: "map",
-    style: "mapbox://styles/mapbox/streets-v11",
-    center: center,
-    zoom: 15
-  })
-
-  // eslint-disable-next-line no-undef
-  const nav = new mapboxgl.NavigationControl()
-  map.addControl(nav)
-
-  var directions = new MapboxDirections({
-    accessToken: mapboxgl.accessToken
-  })
-
-  map.addControl(directions, "top-left")
+  return (
+    <ReactMapGL
+      {...viewport}
+      width="100%"
+      height="100%"
+      onViewportChange={(viewport) => setViewport(viewport)}
+    />
+  );
 }
 
 export default Map;*/

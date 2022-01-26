@@ -12,6 +12,8 @@ app.use('/api/', testRouter); // Handles GET requests to /api, sends back "API i
 
 app.use('/api/users', usersRouter); // Handles GET request to /api/users, sends back everything in the DB users table
 
+
+
 // Serve static assets if in production.
 if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));

@@ -17,16 +17,13 @@ const Home = (props) => {
 						<li key={`usersData${user.id}`}>
 								<span>
 									{`FIRSTNAME: ${user.firstname}`}
-								</span>
-
-							<span>
+								</span>	,
+								<span>
 									{`LASTNAME: ${user.lastname}`}
-								</span>
-
+								</span> ,
 								<span>
 									{`COUNTRY: ${user.country}`}
-								</span>
-								
+								</span> ,
 								<span>
 									{`IMAGE_URL: ${user.image_url}`}
 								</span>	
@@ -34,6 +31,7 @@ const Home = (props) => {
 					))}
 				</ol>
 				: <p>loading...</p>}
+				<div id="map"></div>
 		</main>
 	)	
 };

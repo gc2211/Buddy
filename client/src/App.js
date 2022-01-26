@@ -28,13 +28,6 @@ const App = () => {
 
 export default App;
 
-/*
-	1. Delete all the pages, organisms, molecules and atoms that you are not going to use
-	2. Create a new page (if atomic design also necessary organisms, molecules and atoms) for the mapbox component
-	3. Put the page in the router switch etc.
-	4. Stage commit and push.
-	5. If you are deploying via Github, that's it. But if deploying from the CLI then `$ git push heroku main`
-/*
 
 /*
 	1. Delete the routes that you don't need
