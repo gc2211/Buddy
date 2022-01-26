@@ -1,21 +1,74 @@
-/*import * as React from 'react';
-import ReactMapGL from 'react-map-gl';
+import React, { useState, useEffect } from "react";
+import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import MapState from "react-map-gl/src/utils/map-state";//Need to be done
+import * as golfDate from "./data/golf-courses.json";//Need to be found
 
-function Map() {
-  const [viewport, setViewport] = React.useState({
-    latitude: 37.7577,
-    longitude: -122.4376,
-    zoom: 8
+export default function App() {
+  const [viewport, setViewport] = useState({
+    latitude: 40.7639, 
+    longitude: -73.9794, 
+    width: "100vw",
+    height: "100vh",
+    zoom: 10
   });
+  const [selectedGolf, setSelectedGolf] = useState(null);
+
+  useEffect(() => {
+    const listener = e => {
+      if (e.key === "Escape") {
+        setSelectedGolf(null);
+      }
+    };
+    window.addEventListener("keydown", listener);
+
+    return () => {
+      window.removeEventListener("keydown", listener);
+    };
+  }, []);
 
   return (
-    <ReactMapGL
-      {...viewport}
-      width="100%"
-      height="100%"
-      onViewportChange={(viewport) => setViewport(viewport)}
-    />
+    <div>
+      <ReactMapGL
+        {...viewport}
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+        mapStyle="mapbox://styles/gc2211/ckyub746v001o16ofu0zy8s1b"
+        onViewportChange={viewport => {
+          setViewport(viewport);
+        }}
+      >
+        {golfDate.features.map(golf => (
+          <Marker
+            key={golf.properties.GOLF_ID}
+            latitude={golf.geometry.coordinates[1]}
+            longitude={golf.geometry.coordinates[0]}
+          >
+            <button
+              className="marker-btn"//Need CSS
+              onClick={e => {
+                e.preventDefault();
+                setSelectedGolf(golf);
+              }}
+            >
+            <img src="./public/golf.svg" alt="Golf Icon" />  
+            </button>
+          </Marker>
+        ))}
+
+        {selectedGolf ? (
+          <Popup
+            latitude={selectedGolf.geometry.coordinates[1]}
+            longitude={selectedGolf.geometry.coordinates[0]}
+            onClose={() => {
+              setSelectedGolf(null);
+            }}
+          >
+            <div>
+              <h2>{selectedGolf.properties.NAME}</h2>
+              <p>{selectedGolf.properties.DESCRIPTIO}</p>
+            </div>
+          </Popup>
+        ) : null}
+      </ReactMapGL>
+    </div>
   );
 }
-
-export default Map;*/
