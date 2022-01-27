@@ -1,4 +1,4 @@
-<h1 align="center">heroku-cleardb-fullstack-starter</h1>
+<h1 align="center">Buddy</h1>
 <p>
   <img alt="JavaScript" src="https://github.com/aleen42/badges/raw/master/src/javascript.svg" />
   <img alt="Node" src="https://badges.aleen42.com/src/node.svg"/>
@@ -16,8 +16,6 @@
     <img alt="License: MIT" src="https://img.shields.io/github/license/carlosaore/heroku-cleardb-fullstack-starter" />
   </a>
 </p>
-
-> Create full stack apps with React and Express.<br>Run your client and server with a single command.
 
 ### 🏠 [Homepage](https://github.com/carlosaore/heroku-cleardb-fullstack-starter#readme)
 
@@ -118,25 +116,4 @@ Two different context are provided:
 
 A textData.js is also provided. See `/client/src/components/pages/Home.js` for an example on how to use it.
 
-## Author
-
-👤 **Carlos Orellana**
-
-* Github: [@carlosaore](https://github.com/carlosaore)
-* LinkedIn: [@carlosaore](https://linkedin.com/in/carlosaore)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/carlosaore/heroku-cleardb-fullstack-starter/issues).
-
-## :heart: Show your support
-
-Give a ⭐️ if this project helped you!
-
-## 📝 License
-
-Copyright © 2021 [Carlos Orellana](https://github.com/carlosaore).
-
-This project is [MIT](https://github.com/carlosaore/heroku-cleardb-fullstack-starter/blob/main/LICENSE) licensed.
+ 

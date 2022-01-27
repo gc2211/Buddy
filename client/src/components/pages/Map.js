@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
-import MapState from "react-map-gl/src/utils/map-state";//Need to be done
 import * as golfDate from "./data/golf-courses.json";//Need to be found
 
 export default function App() {
@@ -43,13 +42,13 @@ export default function App() {
             longitude={golf.geometry.coordinates[0]}
           >
             <button
-              className="marker-btn"//Need CSS
+              className="marker-btn"
               onClick={e => {
                 e.preventDefault();
                 setSelectedGolf(golf);
               }}
             >
-            <img src="./public/golf.svg" alt="Golf Icon" />  
+            <img src="./golf.svg" alt="Golf Icon" /> 
             </button>
           </Marker>
         ))}
