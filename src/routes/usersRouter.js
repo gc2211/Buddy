@@ -71,18 +71,15 @@ router.get('/:id', (req, res) => {
 
  router.post('/', (req, res) => {
 
-	console.log(req.body);
-
-	// validation with JOI
- 
+ console.log(req.body)
 //Getting a connection from the pool
 pool.getConnection((err, connection) => {
 	// Not connected!
 	if (err) console.error(err);
 	//Using the connection.
 	//Change the query const according to your needs
-	const query = 'INSERT INTO users (firstname,lastname,age,country ,city ,province,image_url) VALUES (?,?,?,?,?,?,?)'
-	connection.query(query,[req.params.id],(err, data) => {
+ 	const query = 'INSERT INTO users (firstname,lastname,age,country ,city ,province,image_url) VALUES (?,?,?,?,?,?,?,?)'
+	connection.query(query,[req.body.id],(err, data) => {
 		if (err) {
 			console.error(err);
 			res.status(500).send('Server error, could not fetch from DB');
@@ -113,8 +110,8 @@ router.patch('/:id', (req, res) => {
 		//Using the connection.
 		//Change the query const according to your needs
 	 
-		const query = 'UPDATE users SET ? WHERE id = ?'
-		connection.query(query,[req.params.id],(err, data) => {
+		const query = 'UPDATE users SET ? WHERE id =? '
+		connection.query(query,[req.body,req.params.id],(err, data) => {
 			if (err) {
 				console.error(err);
 				res.status(500).send('Server error, could not fetch from DB');
