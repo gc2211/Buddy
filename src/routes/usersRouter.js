@@ -68,8 +68,15 @@ router.get('/:id', (req, res) => {
 });
 
  //Create a user
- 
- router.post('/users', (req, res) => {
+
+ router.post('/', (req, res) => {
+
+	console.log(req.body);
+
+	// validation with JOI
+
+	console.log(errors) // will be undefined when there are no errors
+	if(errors) res.status(500)
  
 //Getting a connection from the pool
 pool.getConnection((err, connection) => {
@@ -77,7 +84,15 @@ pool.getConnection((err, connection) => {
 	if (err) console.error(err);
 	//Using the connection.
 	//Change the query const according to your needs
- 
+	const query = "INSERT INTO users (firstname,lastname,age,country ,city ,province,image_url) VALUES (?,?,?,?,?,?,?)"
+	connection.query(query,[req.params.id],(err, data) => {
+		if (err) {
+			console.error(err);
+			res.status(500).send('Server error, could not fetch from DB');
+		} else {
+			res.status(200).send(data);
+		}
+	});
 
 	//Realising the connection.
 	connection.release();
@@ -92,7 +107,7 @@ pool.getConnection((err, connection) => {
 
 //Update a user
  
-router.patch('/users', (req, res) => {
+router.patch('/', (req, res) => {
  
 	//Getting a connection from the pool
 	pool.getConnection((err, connection) => {
@@ -115,7 +130,7 @@ router.patch('/users', (req, res) => {
   
 	//Delete a user
  
-	router.delete('/users', (req, res) => {
+	router.delete('/', (req, res) => {
  
 		//Getting a connection from the pool
 		pool.getConnection((err, connection) => {
