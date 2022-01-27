@@ -74,9 +74,6 @@ router.get('/:id', (req, res) => {
 	console.log(req.body);
 
 	// validation with JOI
-
-	console.log(errors) // will be undefined when there are no errors
-	if(errors) res.status(500)
  
 //Getting a connection from the pool
 pool.getConnection((err, connection) => {
@@ -84,7 +81,7 @@ pool.getConnection((err, connection) => {
 	if (err) console.error(err);
 	//Using the connection.
 	//Change the query const according to your needs
-	const query = "INSERT INTO users (firstname,lastname,age,country ,city ,province,image_url) VALUES (?,?,?,?,?,?,?)"
+	const query = 'INSERT INTO users (firstname,lastname,age,country ,city ,province,image_url) VALUES (?,?,?,?,?,?,?)'
 	connection.query(query,[req.params.id],(err, data) => {
 		if (err) {
 			console.error(err);
@@ -107,7 +104,7 @@ pool.getConnection((err, connection) => {
 
 //Update a user
  
-router.patch('/', (req, res) => {
+router.patch('/:id', (req, res) => {
  
 	//Getting a connection from the pool
 	pool.getConnection((err, connection) => {
@@ -116,7 +113,16 @@ router.patch('/', (req, res) => {
 		//Using the connection.
 		//Change the query const according to your needs
 	 
-	
+		const query = 'UPDATE users SET ? WHERE id = ?'
+		connection.query(query,[req.params.id],(err, data) => {
+			if (err) {
+				console.error(err);
+				res.status(500).send('Server error, could not fetch from DB');
+			} else {
+				res.status(200).send(data);
+			}
+		});
+
 		//Realising the connection.
 		connection.release();
 	
@@ -130,7 +136,7 @@ router.patch('/', (req, res) => {
   
 	//Delete a user
  
-	router.delete('/', (req, res) => {
+	router.delete('/:id', (req, res) => {
  
 		//Getting a connection from the pool
 		pool.getConnection((err, connection) => {
@@ -139,6 +145,16 @@ router.patch('/', (req, res) => {
 			//Using the connection.
 			//Change the query const according to your needs
 		 
+		    const query = 'DELETE FROM users WHERE id = ?'
+		    connection.query(query,[req.params.id],(err, data) => {
+			if (err) {
+				console.error(err);
+				res.status(500).send('Server error, could not fetch from DB');
+			} else {
+				res.status(200).send(data);
+			}
+		});
+		
 		
 			//Realising the connection.
 			connection.release();
