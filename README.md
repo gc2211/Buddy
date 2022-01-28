@@ -1,4 +1,4 @@
-<h1 align="center" color="blue">Buddy</h1>
+<img src="./client/public/buddy.png" align="center" width="auto"  height="150" />
 <p>
   <img alt="JavaScript" src="https://github.com/aleen42/badges/raw/master/src/javascript.svg" />
   <img alt="Node" src="https://badges.aleen42.com/src/node.svg"/>
@@ -8,9 +8,6 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-blue.svg?cacheSeconds=2592000" />
   <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
   <br />
-  <br />
-  <br />
-  <img src="./client/public/buddy.png" align="center" width="auto"  height="150" />
   </a>
 </p>
 
