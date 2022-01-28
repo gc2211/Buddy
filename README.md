@@ -10,7 +10,7 @@
   <br />
   <br />
   <br />
-  <img src="./client/public/buddy.png" align="center" width="150"  height="150" />
+  <img src="./client/public/buddy.png" align="center" width="auto"  height="150" />
   </a>
 </p>
 
