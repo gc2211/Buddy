@@ -29,11 +29,4 @@ const App = () => {
 export default App;
 
 
-/*
-	1. Delete the routes that you don't need
-	2. Create the routes that you do need
-	3. With Postman make sure that the routes are working
-	4. Implement the UI components in the frontend (create pages, atoms, etc. as you need)
-	5. Stage commit and push.
-	6. If you are deploying via Github, that's it. But if deploying from the CLI then `$ git push heroku main`
-*/
+ 

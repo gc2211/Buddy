@@ -10,6 +10,7 @@ import GlobalStyle from "./styles/globalStyle";
 import {QueryClient, QueryClientProvider} from 'react-query';
 import {createBrowserHistory as history} from "history";
 
+
 const queryClient = new QueryClient();
 
 ReactDOM.render(
