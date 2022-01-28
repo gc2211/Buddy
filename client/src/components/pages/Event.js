@@ -6,7 +6,7 @@ const Event = () => {
 	return (
 		<main>
 			<H2>Upcoming events</H2>
-			<p>Find buddies and rounds of golf to be played in your area</p>
+			<p>Find buddies and enjoy a game golf </p>
 		</main>
 
 	)
