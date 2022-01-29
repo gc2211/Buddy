@@ -1,4 +1,5 @@
 <img src="./client/public/buddy.png" align="center" width="auto"  height="150" />
+
 <p>
   <img alt="JavaScript" src="https://github.com/aleen42/badges/raw/master/src/javascript.svg" />
   <img alt="Node" src="https://badges.aleen42.com/src/node.svg"/>
@@ -16,6 +17,10 @@
 <a href="">View Project</a>
 
 ## :nut_and_bolt: Descritpion: 
+
+<p> A platform where users can freely enjoy their hobbies with like minded people.
+Save time when searching for new friends and make long lasting memories.
+Create event based on your timetable. </p>
 
 <h2>License</h2>
 See the <a href="https://github.com/gc2211/Buddy/blob/main/LICENSE">LICENSE</a> for license rights and limitations (MIT)
