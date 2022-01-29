@@ -1,0 +1,554 @@
+[
+  {
+      "state_park": "Alfred E. Smith/Sunken Meadow",
+      "course_name": "Blue",
+      "region": "9",
+      "county": "Suffolk",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/37/"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/13/details.aspx"
+      },
+      "x": "-73.26320632",
+      "y": "40.90999227",
+      "location": {
+          "latitude": "40.90999227",
+          "longitude": "-73.26320632"
+      },
+      ":@computed_region_yamh_8v7k": "1014",
+      ":@computed_region_wbg7_3whc": "1318",
+      ":@computed_region_kjdx_g34t": "2179"
+  },
+  {
+      "state_park": "Alfred E. Smith/Sunken Meadow",
+      "course_name": "Green",
+      "region": "10",
+      "county": "Suffolk",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/37/"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/13/details.aspx"
+      },
+      "x": "-73.26320632",
+      "y": "40.90999227",
+      "location": {
+          "latitude": "40.90999227",
+          "longitude": "-73.26320632"
+      },
+      ":@computed_region_yamh_8v7k": "1014",
+      ":@computed_region_wbg7_3whc": "1318",
+      ":@computed_region_kjdx_g34t": "2179"
+  },
+  {
+      "state_park": "Alfred E. Smith/Sunken Meadow",
+      "course_name": "Red",
+      "region": "11",
+      "county": "Suffolk",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/37/"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/13/details.aspx"
+      },
+      "x": "-73.26320632",
+      "y": "40.90999227",
+      "location": {
+          "latitude": "40.90999227",
+          "longitude": "-73.26320632"
+      },
+      ":@computed_region_yamh_8v7k": "1014",
+      ":@computed_region_wbg7_3whc": "1318",
+      ":@computed_region_kjdx_g34t": "2179"
+  },
+  {
+      "state_park": "Battle Island",
+      "region": "5",
+      "county": "Oswego",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/44/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/5/details.aspx"
+      },
+      "x": "-76.43604418",
+      "y": "43.36167093",
+      "location": {
+          "latitude": "43.36167093",
+          "longitude": "-76.43604418"
+      },
+      ":@computed_region_yamh_8v7k": "247",
+      ":@computed_region_wbg7_3whc": "623",
+      ":@computed_region_kjdx_g34t": "2135"
+  },
+  {
+      "state_park": "Beaver Island",
+      "region": "1",
+      "county": "Erie",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/56/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/4/details.aspx"
+      },
+      "x": "-78.95310636",
+      "y": "42.96576594",
+      "location": {
+          "latitude": "42.96576594",
+          "longitude": "-78.95310636"
+      },
+      ":@computed_region_yamh_8v7k": "290",
+      ":@computed_region_wbg7_3whc": "526",
+      ":@computed_region_kjdx_g34t": "2041"
+  },
+  {
+      "state_park": "Bethpage",
+      "course_name": "Black",
+      "region": "9",
+      "county": "Nassau",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/108/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/11/details.aspx"
+      },
+      "x": "-73.45680354",
+      "y": "40.74751741",
+      "location": {
+          "latitude": "40.74751741",
+          "longitude": "-73.45680354"
+      },
+      ":@computed_region_yamh_8v7k": "59",
+      ":@computed_region_wbg7_3whc": "1529",
+      ":@computed_region_kjdx_g34t": "2094"
+  },
+  {
+      "state_park": "Bethpage",
+      "course_name": "Blue",
+      "region": "10",
+      "county": "Nassau",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/108/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/11/details.aspx"
+      },
+      "x": "-73.45680354",
+      "y": "40.74751741",
+      "location": {
+          "latitude": "40.74751741",
+          "longitude": "-73.45680354"
+      },
+      ":@computed_region_yamh_8v7k": "59",
+      ":@computed_region_wbg7_3whc": "1529",
+      ":@computed_region_kjdx_g34t": "2094"
+  },
+  {
+      "state_park": "Indian Hills",
+      "region": "4",
+      "county": "Steuben",
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/19/details.aspx"
+      },
+      "x": "-77.15476554",
+      "y": "42.09305489",
+      "location": {
+          "latitude": "42.09305489",
+          "longitude": "-77.15476554"
+      },
+      ":@computed_region_yamh_8v7k": "36",
+      ":@computed_region_wbg7_3whc": "56",
+      ":@computed_region_kjdx_g34t": "2178"
+  },
+  {
+      "state_park": "Bethpage",
+      "course_name": "Green",
+      "region": "11",
+      "county": "Nassau",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/108/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/11/details.aspx"
+      },
+      "x": "-73.45680354",
+      "y": "40.74751741",
+      "location": {
+          "latitude": "40.74751741",
+          "longitude": "-73.45680354"
+      },
+      ":@computed_region_yamh_8v7k": "59",
+      ":@computed_region_wbg7_3whc": "1529",
+      ":@computed_region_kjdx_g34t": "2094"
+  },
+  {
+      "state_park": "Bethpage",
+      "course_name": "Red",
+      "region": "12",
+      "county": "Nassau",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/108/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/11/details.aspx"
+      },
+      "x": "-73.45680354",
+      "y": "40.74751741",
+      "location": {
+          "latitude": "40.74751741",
+          "longitude": "-73.45680354"
+      },
+      ":@computed_region_yamh_8v7k": "59",
+      ":@computed_region_wbg7_3whc": "1529",
+      ":@computed_region_kjdx_g34t": "2094"
+  },
+  {
+      "state_park": "Bethpage",
+      "course_name": "Yellow",
+      "region": "13",
+      "county": "Nassau",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/108/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/11/details.aspx"
+      },
+      "x": "-73.45680354",
+      "y": "40.74751741",
+      "location": {
+          "latitude": "40.74751741",
+          "longitude": "-73.45680354"
+      },
+      ":@computed_region_yamh_8v7k": "59",
+      ":@computed_region_wbg7_3whc": "1529",
+      ":@computed_region_kjdx_g34t": "2094"
+  },
+  {
+      "state_park": "Bonavista",
+      "region": "4",
+      "county": "Seneca",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/160/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/10/details.aspx"
+      },
+      "x": "-76.86772498",
+      "y": "42.67319422",
+      "location": {
+          "latitude": "42.67319422",
+          "longitude": "-76.86772498"
+      },
+      ":@computed_region_yamh_8v7k": "579",
+      ":@computed_region_wbg7_3whc": "363",
+      ":@computed_region_kjdx_g34t": "2144"
+  },
+  {
+      "state_park": "Chenango Valley",
+      "region": "5",
+      "county": "Broome",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/41/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/20/details.aspx"
+      },
+      "x": "-75.83623684",
+      "y": "42.21554025",
+      "location": {
+          "latitude": "42.21554025",
+          "longitude": "-75.83623684"
+      },
+      ":@computed_region_yamh_8v7k": "945",
+      ":@computed_region_wbg7_3whc": "378",
+      ":@computed_region_kjdx_g34t": "2033",
+      ":@computed_region_nwas_j3i4": "194"
+  },
+  {
+      "state_park": "Fair Haven Beach",
+      "region": "4",
+      "county": "Cayuga",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/12/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/9/details.aspx"
+      },
+      "x": "-76.69131068",
+      "y": "43.34170812",
+      "location": {
+          "latitude": "43.34170812",
+          "longitude": "-76.69131068"
+      },
+      ":@computed_region_yamh_8v7k": "68",
+      ":@computed_region_wbg7_3whc": "693",
+      ":@computed_region_kjdx_g34t": "618",
+      ":@computed_region_nwas_j3i4": "220"
+  },
+  {
+      "state_park": "Green Lakes",
+      "region": "5",
+      "county": "Onondaga",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/172/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/14/details.aspx"
+      },
+      "x": "-75.9818848",
+      "y": "43.04697832",
+      "location": {
+          "latitude": "43.04697832",
+          "longitude": "-75.9818848"
+      },
+      ":@computed_region_yamh_8v7k": "696",
+      ":@computed_region_wbg7_3whc": "621",
+      ":@computed_region_kjdx_g34t": "2132",
+      ":@computed_region_nwas_j3i4": "848"
+  },
+  {
+      "state_park": "James Baird",
+      "region": "7",
+      "county": "Dutchess",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/101/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/1/details.aspx"
+      },
+      "x": "-73.79543181",
+      "y": "41.6880051",
+      "location": {
+          "latitude": "41.6880051",
+          "longitude": "-73.79543181"
+      },
+      ":@computed_region_yamh_8v7k": "594",
+      ":@computed_region_wbg7_3whc": "1003",
+      ":@computed_region_kjdx_g34t": "2040",
+      ":@computed_region_69th_yi3w": "367"
+  },
+  {
+      "state_park": "Mark Twain",
+      "region": "4",
+      "county": "Chemung",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/138/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/3/details.aspx"
+      },
+      "x": "-76.83569091",
+      "y": "42.21166069",
+      "location": {
+          "latitude": "42.21166069",
+          "longitude": "-76.83569091"
+      },
+      ":@computed_region_yamh_8v7k": "475",
+      ":@computed_region_wbg7_3whc": "1783",
+      ":@computed_region_kjdx_g34t": "2036"
+  },
+  {
+      "state_park": "Montauk Downs",
+      "region": "9",
+      "county": "Suffolk",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/29/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/8/details.aspx"
+      },
+      "x": "-71.9385278",
+      "y": "41.04928768",
+      "location": {
+          "latitude": "41.04928768",
+          "longitude": "-71.9385278"
+      },
+      ":@computed_region_yamh_8v7k": "1021",
+      ":@computed_region_wbg7_3whc": "1637",
+      ":@computed_region_kjdx_g34t": "2179"
+  },
+  {
+      "state_park": "Ogden & Ruth Livingston Mills",
+      "region": "7",
+      "county": "Dutchess",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/33/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/21/details.aspx"
+      },
+      "x": "-73.93480595",
+      "y": "41.8530054",
+      "location": {
+          "latitude": "41.8530054",
+          "longitude": "-73.93480595"
+      },
+      ":@computed_region_yamh_8v7k": "595",
+      ":@computed_region_wbg7_3whc": "1011",
+      ":@computed_region_kjdx_g34t": "2040",
+      ":@computed_region_69th_yi3w": "369"
+  },
+  {
+      "state_park": "Robert Moses",
+      "course_name": "Pitch/Putt",
+      "region": "9",
+      "county": "Suffolk",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/7/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/12/details.aspx"
+      },
+      "x": "-73.26514244",
+      "y": "40.62351775",
+      "location": {
+          "latitude": "40.62351775",
+          "longitude": "-73.26514244"
+      },
+      ":@computed_region_yamh_8v7k": "1023",
+      ":@computed_region_wbg7_3whc": "1033"
+  },
+  {
+      "state_park": "Rockland Lake",
+      "region": "8",
+      "county": "Rockland",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/81/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/6/details.aspx"
+      },
+      "x": "-73.92191924",
+      "y": "41.13621068",
+      "location": {
+          "latitude": "41.13621068",
+          "longitude": "-73.92191924"
+      },
+      ":@computed_region_yamh_8v7k": "532",
+      ":@computed_region_wbg7_3whc": "1655",
+      ":@computed_region_kjdx_g34t": "628",
+      ":@computed_region_69th_yi3w": "872"
+  },
+  {
+      "state_park": "Rockland Lake",
+      "course_name": "Executive",
+      "region": "9",
+      "county": "Rockland",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/81/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/6/details.aspx"
+      },
+      "x": "-73.92191924",
+      "y": "41.13621068",
+      "location": {
+          "latitude": "41.13621068",
+          "longitude": "-73.92191924"
+      },
+      ":@computed_region_yamh_8v7k": "532",
+      ":@computed_region_wbg7_3whc": "1655",
+      ":@computed_region_kjdx_g34t": "628",
+      ":@computed_region_69th_yi3w": "872"
+  },
+  {
+      "state_park": "Sag Harbor Golf Course",
+      "region": "9",
+      "county": "Suffolk",
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/17/details.aspx"
+      },
+      "x": "-72.26056664",
+      "y": "40.99702452",
+      "location": {
+          "latitude": "40.99702452",
+          "longitude": "-72.26056664"
+      },
+      ":@computed_region_yamh_8v7k": "1021",
+      ":@computed_region_wbg7_3whc": "1537",
+      ":@computed_region_kjdx_g34t": "2179"
+  },
+  {
+      "state_park": "Saratoga Spa",
+      "region": "11",
+      "county": "Saratoga",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/112/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/15/details.aspx"
+      },
+      "x": "-73.80393559",
+      "y": "43.05089145",
+      "location": {
+          "latitude": "43.05089145",
+          "longitude": "-73.80393559"
+      },
+      ":@computed_region_yamh_8v7k": "994",
+      ":@computed_region_wbg7_3whc": "147",
+      ":@computed_region_kjdx_g34t": "2141"
+  },
+  {
+      "state_park": "Saratoga Spa",
+      "course_name": "Executive",
+      "region": "12",
+      "county": "Saratoga",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/112/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/15/details.aspx"
+      },
+      "x": "-73.80393559",
+      "y": "43.05089145",
+      "location": {
+          "latitude": "43.05089145",
+          "longitude": "-73.80393559"
+      },
+      ":@computed_region_yamh_8v7k": "994",
+      ":@computed_region_wbg7_3whc": "147",
+      ":@computed_region_kjdx_g34t": "2141"
+  },
+  {
+      "state_park": "St. Lawrence",
+      "region": "10",
+      "county": "St. Lawrence",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/70/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/2/details.aspx"
+      },
+      "x": "-75.57656984",
+      "y": "44.62983634",
+      "location": {
+          "latitude": "44.62983634",
+          "longitude": "-75.57656984"
+      },
+      ":@computed_region_yamh_8v7k": "317",
+      ":@computed_region_wbg7_3whc": "1591",
+      ":@computed_region_kjdx_g34t": "2140"
+  },
+  {
+      "state_park": "Wellesley Island",
+      "region": "10",
+      "county": "Jefferson",
+      "facility_url": {
+          "url": "https://parks.ny.gov/parks/52/details.aspx"
+      },
+      "golf_url": {
+          "url": "https://parks.ny.gov/golf/7/details.aspx"
+      },
+      "x": "-76.01544821",
+      "y": "44.329238",
+      "location": {
+          "latitude": "44.329238",
+          "longitude": "-76.01544821"
+      },
+      ":@computed_region_yamh_8v7k": "847",
+      ":@computed_region_wbg7_3whc": "1523",
+      ":@computed_region_kjdx_g34t": "2089",
+      ":@computed_region_nwas_j3i4": "491"
+  }
+]
