@@ -5,8 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import APIProvider from "./context/APIProvider";
 import MyProvider from "./context/MyProvider";
 import {BrowserRouter} from "react-router-dom";
-import Theme from "./styles/Theme";
-import GlobalStyle from "./styles/globalStyle";
 import {QueryClient, QueryClientProvider} from 'react-query';
 import {createBrowserHistory as history} from "history";
 
@@ -19,10 +17,7 @@ ReactDOM.render(
 			<MyProvider>
 				<APIProvider>
 					<BrowserRouter history={history}>
-						<Theme>
-							<GlobalStyle/>
 							<App/>
-						</Theme>
 					</BrowserRouter>
 				</APIProvider>
 			</MyProvider>

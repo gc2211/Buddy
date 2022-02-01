@@ -1,20 +1,127 @@
-import {Link} from "react-router-dom";
-import Nav from "../atoms/Nav";
-import H2 from "../atoms/H2";
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const Navbar = () => (
-	<Nav>
-		<H2>WELCOME TO BUDDY</H2>
-			<ul>
-			<li><Link to="/register">Register</Link></li>
-			<li><Link to="/login">Login</Link></li>
-			<li><Link to="/home">Home</Link></li> 
-			<li><Link to="/map">Map</Link></li>
-			<li><Link to="/profile">Profile</Link></li>
-		</ul>
-	</Nav>
-)
+
+function Navbar() {
+  const [extendNavbar, setExtendNavbar] = useState(false);
+
+  return (
+    <NavbarContainer extendNavbar={extendNavbar}>
+      <NavbarInnerContainer>
+        <LeftContainer>
+          <NavbarLinkContainer>
+            <NavbarLink to="/home"> Home</NavbarLink>
+            <NavbarLink to="/map"> Map</NavbarLink>
+            <NavbarLink to="/inbox"> Inbox</NavbarLink>
+			<NavbarLink to="/profile">Profile</NavbarLink>
+			<Logo a="https://ibb.co/vxyTB3W"></Logo>
+            <OpenLinksButton
+              onClick={() => {
+                setExtendNavbar((curr) => !curr);
+              }}
+            >
+              {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
+            </OpenLinksButton>
+          </NavbarLinkContainer>
+        </LeftContainer>
+        <RightContainer>
+        </RightContainer>
+      </NavbarInnerContainer>
+      {extendNavbar && (
+        <NavbarExtendedContainer>
+          <NavbarLinkExtended to="/home"> Home</NavbarLinkExtended>
+          <NavbarLinkExtended to="/map"> Map</NavbarLinkExtended>
+          <NavbarLinkExtended to="/inbox"> Inbox</NavbarLinkExtended>
+          <NavbarLinkExtended to="/profile"> Profile</NavbarLinkExtended>
+        </NavbarExtendedContainer>
+      )}
+    </NavbarContainer>
+  );
+}
 
 export default Navbar;
 
-///// Home could be merged with Map : Hi + name at the top , map to browse and at the bottom the log out button 
+
+export const NavbarContainer = styled.nav`
+  width: 100%;
+  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 700px) {
+    height: 80px;
+  }
+`;
+
+export const LeftContainer = styled.div`
+  flex: 70%;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+`;
+
+export const RightContainer = styled.div`
+  flex: 30%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+`;
+
+export const NavbarInnerContainer = styled.div`
+  width: 100%;
+  height: 80px;
+  display: flex;
+`;
+
+export const NavbarLinkContainer = styled.div`
+  display: flex;
+`;
+
+export const NavbarLink = styled(Link)`
+  color: white;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+
+export const NavbarLinkExtended = styled(Link)`
+  color: white;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
+`;
+
+export const Logo = styled.img`
+  margin: 10px;
+  max-width: 180px;
+  height: auto;
+`;
+
+export const OpenLinksButton = styled.button`
+  width: 70px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+  @media (min-width: 700px) {
+    display: none;
+  }
+`;
+
+export const NavbarExtendedContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 700px) {
+    display: none;
+  }
+`;
+

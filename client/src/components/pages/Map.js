@@ -30,7 +30,7 @@ export default function App() {
     <div>
       <ReactMapGL
         {...viewport}
-        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+        mapboxApiAccessToken="pk.eyJ1IjoiZ2MyMjExIiwiYSI6ImNreXcxc2s2aTA0YjEybm14Njc1M2JwMzQifQ.VqbFEjTIiNaweT1lK7mU6w"
         mapStyle="mapbox://styles/gc2211/ckz0gd9uf004r14nt02brjaq8"
        >
         hello world
