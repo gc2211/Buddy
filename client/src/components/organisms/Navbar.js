@@ -15,7 +15,7 @@ function Navbar() {
             <NavbarLink to="/map"> Map</NavbarLink>
             <NavbarLink to="/inbox"> Inbox</NavbarLink>
 			<NavbarLink to="/profile">Profile</NavbarLink>
-			<Logo a="https://ibb.co/vxyTB3W"></Logo>
+			<Logo src="https://i.ibb.co/CsMzDSp/Capture-d-e-cran-2022-02-02-a-10-47-36.png" alt="logo" height="auto" width="auto" />
             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);
@@ -99,7 +99,7 @@ export const NavbarLinkExtended = styled(Link)`
 
 export const Logo = styled.img`
   margin: 10px;
-  max-width: 180px;
+  max-width: 60px;
   height: auto;
 `;
 
