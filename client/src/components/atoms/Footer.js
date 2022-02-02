@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Footer = () => {
     return (
     <Footer>
-        <p className="footer-text">Buddy is created by Gauthier CHATEL</p>
+        <p className="footer-text">Created by Gauthier CHATEL</p>
     </Footer>
     );
 };

@@ -11,10 +11,10 @@ function Navbar() {
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLinkContainer>
-            <NavbarLink to="/home"> Home</NavbarLink>
-            <NavbarLink to="/map"> Map</NavbarLink>
-            <NavbarLink to="/inbox"> Inbox</NavbarLink>
-			<NavbarLink to="/profile">Profile</NavbarLink>
+            <NavbarLink to="./components/pages/home"> Home</NavbarLink>
+            <NavbarLink to="./components/pages/map"> Map</NavbarLink>
+            <NavbarLink to="./components/pages/inbox"> Inbox</NavbarLink>
+			<NavbarLink to="./components/pages/profile">Profile</NavbarLink>
 			<Logo src="https://i.ibb.co/CsMzDSp/Capture-d-e-cran-2022-02-02-a-10-47-36.png" alt="logo" height="auto" width="auto" />
             <OpenLinksButton
               onClick={() => {

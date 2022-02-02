@@ -1,4 +1,4 @@
-<img src="./client/public/buddy.png" align="center" width="auto"  height="150" />
+<img src="https://i.ibb.co/CsMzDSp/Capture-d-e-cran-2022-02-02-a-10-47-36.png" align="center" width="auto"  height="150" />
 
 <p>
   <img alt="JavaScript" src="https://github.com/aleen42/badges/raw/master/src/javascript.svg" />
@@ -13,10 +13,10 @@
 </p>
 
 
-### ✨ View Demo
+### View Demo
 <a href="">View Project</a>
 
-## :nut_and_bolt: Descritpion: 
+## :✨ : Descritpion: 
 
 <p> A platform where users can freely enjoy their hobbies with like minded people.
 Save time when searching for new friends and make long lasting memories.
