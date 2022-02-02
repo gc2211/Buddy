@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import ReactMapGL, { Marker, Popup } from "react-map-gl";
-//import * as golfData from "../../data/golf-courses.json";
-
+import React, { useState } from "react";
+import ReactMapGL from "react-map-gl";
+ 
 export default function App() {
   const [viewport, setViewport] = useState({
     latitude: 45.4211,
@@ -10,20 +9,6 @@ export default function App() {
     height: "100vh",
     zoom: 10
   });
-  const [selectedGolf, setSelectedGolf] = useState(null);
-
-  useEffect(() => {
-    const listener = e => {
-      if (e.key === "Escape") {
-        setSelectedGolf(null);
-      }
-    };
-    window.addEventListener("keydown", listener);
-
-    return () => {
-      window.removeEventListener("keydown", listener);
-    };
-  }, []);
 
   return (
     <div>

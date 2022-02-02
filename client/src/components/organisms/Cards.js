@@ -5,7 +5,7 @@ import Card from "./Card";
 function Cards() {
   const commentsOne = [
     {
-      user: "Jon Rham",
+      user: "Jon Rahm",
       text: "Impressive swing! 🔥",
       id: 1,
     },
@@ -42,7 +42,7 @@ function Cards() {
       <Stories />
 
       <Card
-        accountName="Jon Rham"
+        accountName="Jon Rahm"
         storyBorder={true}
         image="https://cdn-lejdd.lanmedia.fr/var/europe1/storage/images/lejdd/sport/golf/ryder-cup-de-golf-le-numero-1-mondial-espagnol-jon-rahm-suffira-t-il-pour-battre-les-americains-4067318/57634971-1-fre-FR/Ryder-Cup-de-golf-le-numero-1-mondial-espagnol-Jon-Rahm-suffira-t-il-pour-battre-les-Americains.jpg"
         comments={commentsOne}

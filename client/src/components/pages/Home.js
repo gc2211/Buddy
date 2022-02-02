@@ -6,10 +6,10 @@ function Home() {
     return (    
     <div className="App">      
     <main>        
-        <div className="container">  
-    <Cards />          
-    <Sidebar />        
-    </div>      
+      <div className="container">  
+       <Cards />          
+       <Sidebar />        
+      </div>      
     </main>    
     </div>  
     );

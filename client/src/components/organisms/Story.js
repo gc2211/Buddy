@@ -1,6 +1,6 @@
 import "src/styles/story.scss";
 import ProfileIcon from "./ProfileIcon";
-import users from "data/users";
+import users from "./data/users";
 
 function Story() {
   let accountName = users[Math.floor(Math.random() * users.length)].username;
