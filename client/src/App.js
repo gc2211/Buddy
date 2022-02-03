@@ -1,9 +1,9 @@
-import {BrowserRouter as Router,Route , Switch} from "react-router-dom";
+import {Route , Switch} from "react-router-dom";
 import Navbar from "./components/organisms/Navbar";
 import Profile from "./components/pages/Profile";
 import Map from "./components/pages/Map";
 import Home from "./components/pages/Home";
-import Inbox from "./components/pages/Inbox";
+import Events from "./components/pages/Events";
 import Footer from "./components/atoms/Footer";
 import "./App.css";
 
@@ -12,15 +12,13 @@ const App = () => {
 
 	return (
 		<div className="App">
-		<Router>
 			<Navbar/>
 			<Switch>
 			    <Route path="/home" component={Home}/>
 			    <Route path="/map" component={Map}/>
 				<Route path="/profile" component={Profile}/>
-				<Route path="/inbox" component={Inbox}/>
+				<Route path="/events" component={Events}/>
 			</Switch>
-            </Router>
 			<Footer/>
 		</div>
 	)

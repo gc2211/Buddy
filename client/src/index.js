@@ -3,10 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import APIProvider from "./context/APIProvider";
-import MyProvider from "./context/MyProvider";
 import {BrowserRouter} from "react-router-dom";
 import {QueryClient, QueryClientProvider} from 'react-query';
-import {createBrowserHistory as history} from "history";
 
 
 const queryClient = new QueryClient();
@@ -14,13 +12,11 @@ const queryClient = new QueryClient();
 ReactDOM.render(
 	<React.StrictMode>
 		<QueryClientProvider client={queryClient}>
-			<MyProvider>
 				<APIProvider>
-					<BrowserRouter history={history}>
+					<BrowserRouter>
 							<App/>
 					</BrowserRouter>
 				</APIProvider>
-			</MyProvider>
 		</QueryClientProvider>
 	</React.StrictMode>,
 	document.getElementById('root')

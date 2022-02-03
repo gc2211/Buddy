@@ -11,10 +11,10 @@ function Navbar() {
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLinkContainer>
-            <NavbarLink to="components/pages/home"> Home</NavbarLink>
-            <NavbarLink to="components/pages/map"> Map</NavbarLink>
-            <NavbarLink to="components/pages/inbox"> Inbox</NavbarLink>
-			<NavbarLink to="components/pages/profile">Profile</NavbarLink>
+            <NavbarLink to="/home"> Home</NavbarLink>
+            <NavbarLink to="/map"> Map</NavbarLink>
+            <NavbarLink to="/events"> Events</NavbarLink>
+			<NavbarLink to="/profile">Profile</NavbarLink>
 			<Logo src="https://i.ibb.co/CsMzDSp/Capture-d-e-cran-2022-02-02-a-10-47-36.png" alt="logo" height="auto" width="auto" />
             <OpenLinksButton
               onClick={() => {
@@ -30,10 +30,10 @@ function Navbar() {
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtended to="pages/home"> Home</NavbarLinkExtended>
-          <NavbarLinkExtended to="pages/map"> Map</NavbarLinkExtended>
-          <NavbarLinkExtended to="pages/inbox"> Inbox</NavbarLinkExtended>
-          <NavbarLinkExtended to="pages/profile"> Profile</NavbarLinkExtended>
+          <NavbarLinkExtended to="/home"> Home</NavbarLinkExtended>
+          <NavbarLinkExtended to="/map"> Map</NavbarLinkExtended>
+          <NavbarLinkExtended to="/events"> Events</NavbarLinkExtended>
+          <NavbarLinkExtended to="/profile"> Profile</NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
