@@ -1,13 +1,27 @@
-import React, { useState } from "react";
-import ReactMapGL from "react-map-gl";
+import React, { useState, useEffect } from "react";
+import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import * as golfData from "data/golf-courses.json";
+
 export default function App() {
   const [viewport, setViewport] = useState({
-    latitude: 40.730610,
-    longitude: -73.935242,
+    latitude: 25.7616798,
+    longitude: -80.1917902,
     width: "100vw",
     height: "100vh",
-    zoom: 8
+    zoom: 10
   });
+  const [selectedGolf, setSelectedGolf] = useState(null);
+  useEffect(() => {
+    const listener = e => {
+      if (e.key === "Escape") {
+        setSelectedGolf(null);
+      }
+    };
+    window.addEventListener("keydown", listener);
+    return () => {
+      window.removeEventListener("keydown", listener);
+    };
+  }, []);
   return (
     <div>
       <ReactMapGL
@@ -18,7 +32,37 @@ export default function App() {
           setViewport(viewport);
         }}
       >
-      <button>Events</button>
+        {golfData.features.map(golf => (
+          <Marker
+            key={golf.attributes.OBJECTID}
+            latitude={golf.geometry.coordinates[1]}
+            longitude={golf.geometry.coordinates[0]}
+          >
+            <button
+              className="marker-btn"
+              onClick={e => {
+                e.preventDefault();
+                setSelectedGolf(golf);
+              }}
+            >
+              <img src="/golf.svg" alt="Golf icon" />
+            </button>
+          </Marker>
+        ))}
+        {selectedGolf ? (
+          <Popup
+            latitude={selectedGolf.geometry.coordinates[1]}
+            longitude={selectedGolf.geometry.coordinates[0]}
+            onClose={() => {
+              setSelectedGolf(null);
+            }}
+          >
+            <div>
+              <h2>{selectedGolf.attributes.NAME}</h2>
+              <p>{selectedGolf.attributes.WEBSITE}</p>
+            </div>
+          </Popup>
+        ) : null}
       </ReactMapGL>
     </div>
   );

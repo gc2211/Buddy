@@ -2,6 +2,8 @@ import React from 'react';
 import "styles/sidebar.scss";
 import UserProfile from "components/organisms/UserProfile";
 import image from "images/collin.png";
+
+
  
 function Profile ()  {
      
@@ -11,8 +13,8 @@ function Profile ()  {
         <br/>
         <br/>
         <UserProfile
-          username="Collin"
-          caption="Collin Morikawa"
+          username="Collin Morikawa"
+          caption=""
           iconSize="big"
           image={image}
         />
@@ -25,7 +27,9 @@ function Profile ()  {
         <br/>
         <p align="left">Upcoming Events:</p>          
         <p align="right">Past Events:</p>
-        <p align="left">Buddies:</p>
+        <div className='list'>
+          <p>Buddies:</p>
+         </div> 
         </main>
 	    </div>
     )
