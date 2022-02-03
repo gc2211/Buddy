@@ -13,7 +13,7 @@ function ProfileIcon(props) {
 
   let profileImage = image
     ? image
-    : `https://www.tennisworldusa.org/imgb/104657/collin-morikawa-open-dedicated-to-caddy-.jpg ${randomId}`;
+    : `https://i.pravatar.cc/150?img=${randomId}`;
 
   return (
     <div className={storyBorder ? "storyBorder" : ""}>

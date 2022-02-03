@@ -2,7 +2,7 @@ import "styles/sidebar.scss";
 import Sticky from "react-sticky-el";
 import UserProfile from "./UserProfile";
 import Suggestions from "./Suggestions";
-import image from "images/profile.png";
+import image from "images/collin.png";
 
 function Sidebar() {
   return (
@@ -11,7 +11,6 @@ function Sidebar() {
         <UserProfile
           username="Collin"
           caption="Collin Morikawa"
-          urlText="Switch"
           iconSize="big"
           image={image}
         />

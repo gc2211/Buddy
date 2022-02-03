@@ -14,8 +14,7 @@ function Navbar() {
             <NavbarLink to="/home"> Home</NavbarLink>
             <NavbarLink to="/map"> Map</NavbarLink>
             <NavbarLink to="/events"> Events</NavbarLink>
-			<NavbarLink to="/profile">Profile</NavbarLink>
-			<Logo src="https://i.ibb.co/CsMzDSp/Capture-d-e-cran-2022-02-02-a-10-47-36.png" alt="logo" height="auto" width="auto" />
+			      <NavbarLink to="/profile">Profile</NavbarLink>
             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);
@@ -26,6 +25,7 @@ function Navbar() {
           </NavbarLinkContainer>
         </LeftContainer>
         <RightContainer>
+        <Logo src="https://i.ibb.co/1spqpB3/buddy.png" alt="logo" height="auto" width="auto" />
         </RightContainer>
       </NavbarInnerContainer>
       {extendNavbar && (

@@ -6,7 +6,7 @@ function Cards() {
   const commentsOne = [
     {
       user: "Jon Rahm",
-      text: "Impressive swing! 🔥",
+      text: "Serious business!",
       id: 1,
     },
     {
@@ -16,7 +16,7 @@ function Cards() {
     },
     {
       user: "Dustin Johnsson",
-      text: "Where is it?",
+      text: "Triple bogey?",
       id: 3,
     },
   ];
@@ -24,8 +24,18 @@ function Cards() {
   const commentsTwo = [
     {
       user: "Justin Rose",
-      text: "Amazing pic!",
+      text: "Amazing pic!🔥",
       id: 4,
+    },
+    {
+      user: "Patrick Reed",
+      text: "What a swing bud!",
+      id: 5,
+    },
+    {
+      user: "Bryson DeChambeau",
+      text: "Which golf?",
+      id: 6,
     },
   ];
 
@@ -33,7 +43,17 @@ function Cards() {
     {
       user: "Adam Scott",
       text: "Wanna play a round with me soon?",
-      id: 5,
+      id: 7,
+    },
+    {
+      user: "Patrick Cantlay",
+      text: "What a view!",
+      id: 8,
+    },
+    {
+      user: "Rory Mckilroy",
+      text: "Were you playing with @Justin Rose?",
+      id: 9,
     },
   ];
 
