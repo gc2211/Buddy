@@ -1,8 +1,8 @@
-import "src/styles/sidebar.scss";
+import "styles/sidebar.scss";
 import Sticky from "react-sticky-el";
 import UserProfile from "./UserProfile";
 import Suggestions from "./Suggestions";
-import image from "src/images/profile.jpg";
+import image from "images/profile.png";
 
 function Sidebar() {
   return (

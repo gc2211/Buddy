@@ -1,4 +1,4 @@
-import "src/styles/cards.scss";
+import "styles/cards.scss";
 import Stories from "./Stories";
 import Card from "./Card";
 

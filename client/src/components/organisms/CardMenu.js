@@ -1,8 +1,8 @@
-import "src/styles/cardMenu.scss";
-import { ReactComponent as Inbox } from "src/images/inbox.svg";
-import { ReactComponent as Comments } from "src/images/comments.svg";
-import { ReactComponent as Notifications } from "src/images/notifications.svg";
-import { ReactComponent as Bookmark } from "src/images/bookmark.svg";
+import "styles/cardMenu.scss";
+import { ReactComponent as Inbox } from "images/inbox.svg";
+import { ReactComponent as Comments } from "images/comments.svg";
+import { ReactComponent as Notifications } from "images/notifications.svg";
+import { ReactComponent as Bookmark } from "images/bookmark.svg";
 
 function CardMenu() {
   return (

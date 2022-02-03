@@ -1,10 +1,10 @@
-import "../styles/menu.scss";
-import { ReactComponent as Home } from "../images/home.svg";
-import { ReactComponent as Inbox } from "./images/inbox.svg";
-import { ReactComponent as Explore } from "./images/explore.svg";
-import { ReactComponent as Notifications } from "./images/notifications.svg";
+import "styles/menu.scss";
+import { ReactComponent as Home } from "images/home.svg";
+import { ReactComponent as Inbox } from "images/inbox.svg";
+import { ReactComponent as Explore } from "images/explore.svg";
+import { ReactComponent as Notifications } from "images/notifications.svg";
 import ProfileIcon from "./ProfileIcon";
-import image from "./images/profile.png";
+import image from "images/profile.png";
 
 function Menu() {
   return (

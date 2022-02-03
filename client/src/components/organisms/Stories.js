@@ -1,4 +1,4 @@
-import "src/styles/stories.scss";
+import "styles/stories.scss";
 import Story from "./Story";
 import HorizontalScroll from "react-scroll-horizontal";
 

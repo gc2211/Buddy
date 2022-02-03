@@ -1,4 +1,4 @@
-import "src/styles/App.scss";
+import "styles/App.scss";
 import Cards from "components/organisms/Cards";
 import Sidebar from "components/organisms/Sidebar";
 

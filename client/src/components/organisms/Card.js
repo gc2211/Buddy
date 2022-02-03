@@ -1,6 +1,6 @@
-import "src/styles/card.scss";
+import "styles/card.scss";
 import UserProfile from "./UserProfile";
-import { ReactComponent as CardButton } from "src/images/cardButton.svg";
+import { ReactComponent as CardButton } from "images/cardButton.svg";
 import CardMenu from "./CardMenu";
 import Comment from "./Comment";
 
