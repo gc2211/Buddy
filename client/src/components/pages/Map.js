@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ReactMapGL from "react-map-gl";
- 
 export default function App() {
   const [viewport, setViewport] = useState({
     latitude: 45.4211,
@@ -9,7 +8,6 @@ export default function App() {
     height: "100vh",
     zoom: 10
   });
-
   return (
     <div>
       <ReactMapGL
@@ -24,5 +22,3 @@ export default function App() {
     </div>
   );
 }
- 
-   

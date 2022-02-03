@@ -1,5 +1,4 @@
 import "styles/cards.scss";
-import Stories from "./Stories";
 import Card from "./Card";
 
 function Cards() {
@@ -56,13 +55,59 @@ function Cards() {
       id: 9,
     },
   ];
+    const commentsFour = [
+      {
+        user: "Martin Hovland",
+        text: "New buddies?",
+        id: 10,
+      },
+      {
+        user: "Brooks Koepka",
+        text: "Is this Pierre?",
+        id: 11,
+      },
+      {
+        user: "Jack Na",
+        text: "Where did you play?",
+        id: 12,
+      },
+    ];
+      const commentsFive = [
+        {
+          user: "Kevin Li",
+          text: "Nice shot!",
+          id: 13,
+        },
+        {
+          user: "Patrick Cantlay",
+          text: "I hate bunkers!!",
+          id: 14,
+        },
+        {
+          user: "Rory Mckilroy",
+          text: "Early morning?",
+          id: 15,
+        },
+      ];
+        const commentsSix = [
+          {
+            user: "Ian Poulter",
+            text: "Did it go in?",
+            id: 16,
+          },
+          {
+            user: "Thomas Pieters",
+            text: "Drop it like it's hot!",
+            id: 17,
+          },
+        
+  ];
 
   return (
     <div className="cards">
-      <Stories />
 
       <Card
-        accountName="Jon Rahm"
+        accountName="Shawn Lowry"
         storyBorder={true}
         image="https://cdn-lejdd.lanmedia.fr/var/europe1/storage/images/lejdd/sport/golf/ryder-cup-de-golf-le-numero-1-mondial-espagnol-jon-rahm-suffira-t-il-pour-battre-les-americains-4067318/57634971-1-fre-FR/Ryder-Cup-de-golf-le-numero-1-mondial-espagnol-Jon-Rahm-suffira-t-il-pour-battre-les-Americains.jpg"
         comments={commentsOne}
@@ -87,6 +132,34 @@ function Cards() {
         likedByNumber={90}
         hours={4}
       />
+       <Card
+        accountName="Tom Keipert"
+        storyBorder={true}
+        image="https://chesapeakegolf.com/wp-content/uploads/2014/03/GolfBuddies.jpg"
+        comments={commentsFour}
+        likedByText="Bryson deChambeau "
+        likedByNumber={17}
+        hours={1}
+      /> 
+      <Card
+      accountName="Dustin Johnsson"
+      storyBorder={true}
+      image="https://www.visitmorocco.com/sites/default/files/styles/thumbnail_events_slider/public/thumbnails/image/palm-golf-marrakech.jpg?itok=0HAcRODZ"
+      comments={commentsFive}
+      likedByText="Justin Thomas"
+      likedByNumber={123}
+      hours={2}
+    /> 
+    <Card
+    accountName="Shawn Lowry"
+    storyBorder={true}
+    image="https://www.nouvellespublications.com/content/articles/964/main_france-golf-fd.jpg"
+    comments={commentsSix}
+    likedByText="Tommy Fleetwood"
+    likedByNumber={9}
+    hours={5}
+  /> 
+
     </div>
   );
 }

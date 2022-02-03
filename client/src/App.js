@@ -16,8 +16,8 @@ const App = () => {
 			<Switch>
 			    <Route path="/home" component={Home}/>
 			    <Route path="/map" component={Map}/>
-				<Route path="/profile" component={Profile}/>
 				<Route path="/events" component={Events}/>
+				<Route path="/profile" component={Profile}/>
 			</Switch>
 			<Footer/>
 		</div>
