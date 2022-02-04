@@ -25,7 +25,9 @@ function Navbar() {
           </NavbarLinkContainer>
         </LeftContainer>
         <RightContainer>
+         <a href="/home"> 
         <Logo src="https://i.ibb.co/1spqpB3/buddy.png" alt="logo" height="auto" width="auto" />
+        </a>
         </RightContainer>
       </NavbarInnerContainer>
       {extendNavbar && (
