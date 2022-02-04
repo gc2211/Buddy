@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
-import * as golfData from "data/golf-courses.json";
+import golfData from "data/golfData";
 
 export default function App() {
   const [viewport, setViewport] = useState({
@@ -35,8 +35,8 @@ export default function App() {
         {golfData.features.map(golf => (
           <Marker
             key={golf.attributes.OBJECTID}
-            latitude={golf.geometry.coordinates[1]}
-            longitude={golf.geometry.coordinates[0]}
+            latitude={golf.geometry.y}
+            longitude={golf.geometry.x}
           >
             <button
               className="marker-btn"
@@ -51,8 +51,8 @@ export default function App() {
         ))}
         {selectedGolf ? (
           <Popup
-            latitude={selectedGolf.geometry.coordinates[1]}
-            longitude={selectedGolf.geometry.coordinates[0]}
+            latitude={selectedGolf.geometry.y}
+            longitude={selectedGolf.geometry.x}
             onClose={() => {
               setSelectedGolf(null);
             }}
