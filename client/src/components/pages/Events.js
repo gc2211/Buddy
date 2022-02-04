@@ -1,10 +1,14 @@
 import React from "react";
+import EventList from "components/organisms/EventList";
 
 function Events () {
 
 return (
-    <h1>Events</h1>
-)
+
+    <div className="event">
+        <EventList/>
+    </div>
+);
 
 }
 

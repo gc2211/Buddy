@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import golfData from "data/golfData";
+import image from "images/collin.png";
+import UserProfile from "components/organisms/UserProfile";
+
 
 export default function App() {
   const [viewport, setViewport] = useState({
@@ -60,6 +63,14 @@ export default function App() {
             <div>
               <h2>{selectedGolf.attributes.NAME}</h2>
               <p>{selectedGolf.attributes.WEBSITE}</p>
+              <p>Upcoming events:</p>
+              <p>05/04/2022</p>
+              <p>Organised by:</p>
+              <UserProfile
+            username="Collin Morikawa"
+            iconSize="medium"
+             image={image}
+        />
             </div>
           </Popup>
         ) : null}
