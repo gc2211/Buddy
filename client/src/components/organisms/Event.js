@@ -3,6 +3,7 @@ import EventForm from './EventForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 import {GrValidate} from 'react-icons/gr';
+
 const Event = ({ events, completeEvent, removeEvent, updateEvent }) => {
   const [edit, setEdit] = useState({
     id: null,
@@ -15,7 +16,8 @@ const Event = ({ events, completeEvent, removeEvent, updateEvent }) => {
       value: ''
     });
   };
-  if (edit.id) {
+  if (edit.id)
+   {
     return <EventForm edit={edit} onSubmit={submitUpdate} />;
   }
   return events.map((event, index) => (
@@ -36,7 +38,6 @@ const Event = ({ events, completeEvent, removeEvent, updateEvent }) => {
           className='edit-icon'
         />
         <GrValidate
-          onClick={() => removeEvent(event.id)}
           className='validate-icon'
         />
       </div>

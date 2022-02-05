@@ -10,7 +10,7 @@ import "./App.css";
   
 const App = () => {
 
-	return (
+return (
 		<div className="App">
 			<Navbar/>
 			<Switch>

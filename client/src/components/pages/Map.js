@@ -3,6 +3,7 @@ import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import golfData from "data/golfData";
 import image from "images/collin.png";
 import UserProfile from "components/organisms/UserProfile";
+import {GrValidate} from 'react-icons/gr';
 
 
 export default function App() {
@@ -35,6 +36,9 @@ export default function App() {
           setViewport(viewport);
         }}
       >
+         <a href="/events"> 
+        <button>Events</button>
+        </a>
         {golfData.features.map(golf => (
           <Marker
             key={golf.attributes.OBJECTID}
@@ -71,6 +75,9 @@ export default function App() {
             iconSize="medium"
              image={image}
         />
+        <GrValidate
+        className='validate-icon'
+       />
             </div>
           </Popup>
         ) : null}

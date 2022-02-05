@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import EventForm from './EventForm';
 import Event from './Event';
+ 
 function EventList() {
   const [events, setEvents] = useState([]);
   const addEvent = event => {
@@ -30,6 +31,7 @@ function EventList() {
     });
     setEvents(updatedEvents);
   };
+
   return (
     <>
       <h1>Upcoming events near you</h1>

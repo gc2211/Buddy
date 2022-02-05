@@ -1,0 +1,90 @@
+ #profile-container {
+    width: 1200px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding:10px;
+    display: flex; 
+     .profile-info{
+        background-color: rgb(0, 32, 80);
+        border-radius: 15px;
+        flex: 0 1  45%;
+        padding: 10px;
+        color: rgb(250, 245, 245);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 2px 10px 33px 0px;
+        h4{
+            font-size: 2rem;
+            font-weight: 500;
+            margin:0;
+            margin-bottom: 1em;
+        }
+        p{
+            color: black;
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        .icon-text{
+             display: flex;
+             align-items: center;
+             justify-content: flex-start;
+             margin-bottom: 2rem;
+            .fa{
+                flex: 0 0 20%;
+                font-size: 1.8rem;
+                margin-right:2rem ;
+                color: blue;
+            }
+            span{
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+        }
+
+        .social-media{
+            display: flex;
+            width:50%;
+            justify-content: space-between;
+            .icon-circle{
+             flex:0 1 40px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 40px;
+             border-radius: 50%;
+             transition: .3s all ease-in-out ;
+            &:hover{
+                background: rgb(17, 180, 159);
+            }      
+            .fa{
+                font-size: 25px;
+            }     
+          }
+        }
+    }
+
+    form{
+        padding: 10px;
+        width: 100%; 
+    }
+    .col{
+        display: flex;
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .form-group{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex: 0 1 100%;
+        padding-right: 40px;
+
+        label{
+            font-size: 1;
+            margin-bottom: 1rem;
+            color: rgb(3, 1, 104);
+        }
+    }
+}
