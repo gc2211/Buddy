@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import {BiWorld} from "react-icons/bi";
+import {CgProfile} from "react-icons/cg";
+import { AiOutlineHome } from "react-icons/ai";
+import {BsCalendarWeek} from "react-icons/bs"
+
 
 
 function Navbar() {
@@ -11,10 +16,22 @@ function Navbar() {
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLinkContainer>
-            <NavbarLink to="/home"> Home</NavbarLink>
-            <NavbarLink to="/map"> Map</NavbarLink>
-            <NavbarLink to="/events"> Events</NavbarLink>
-			      <NavbarLink to="/profile">Profile</NavbarLink>
+            <NavbarLink to="/home">  <AiOutlineHome
+         
+          className='home-icon'
+        /></NavbarLink>
+            <NavbarLink to="/map"> <BiWorld
+         
+         className='map-icon'
+       /></NavbarLink>
+            <NavbarLink to="/calendars"><BsCalendarWeek
+         
+         className='events-icon'
+       /></NavbarLink>
+			      <NavbarLink to="/profile"><CgProfile
+         
+         className='profile-icon'
+       /></NavbarLink>
             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);
@@ -34,7 +51,7 @@ function Navbar() {
         <NavbarExtendedContainer>
           <NavbarLinkExtended to="/home"> Home</NavbarLinkExtended>
           <NavbarLinkExtended to="/map"> Map</NavbarLinkExtended>
-          <NavbarLinkExtended to="/events"> Events</NavbarLinkExtended>
+          <NavbarLinkExtended to="/calendars"> Calendar</NavbarLinkExtended>
           <NavbarLinkExtended to="/profile"> Profile</NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}

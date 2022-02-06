@@ -36,7 +36,7 @@ export default function App() {
           setViewport(viewport);
         }}
       >
-         <a href="/events"> 
+         <a href="/calendars"> 
         <button>Events</button>
         </a>
         {golfData.features.map(golf => (
