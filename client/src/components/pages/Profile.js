@@ -25,7 +25,7 @@ return (
          <div className='profile-user'>
          <UserProfile
             username="Collin Morikawa"
-            iconSize="medium"
+            iconSize="big"
             image={image}
         /> 
         </div>      
@@ -55,7 +55,16 @@ return (
            <label>Biography</label>
            <textarea></textarea>
          </div>
-        </div>      
+        </div> 
+        <br/> 
+        <br/>     
+        <br/>     
+       <div className='upevents'>
+       <h3>Upcoming events:</h3>
+       </div>
+       <div className='pastevents'>
+       <h3>Pasts events:</h3>
+       </div>
        </form>
        <div className='edit'>
        <FaUserEdit

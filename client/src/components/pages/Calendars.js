@@ -44,9 +44,9 @@ function Calendars() {
     return (
         <div className="App">
             <h1>Browse events</h1>
-            <h2>Add your Event</h2>
+            <h2>Add your event below to meet new Buddies</h2>
             <div>
-                <input type="text" placeholder="Add Title" style={{ width: "20%", marginRight: "10px" }} value={newEvent.title} onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })} />
+                <input type="text" placeholder="Add your event" style={{ width: "20%", marginRight: "10px" }} value={newEvent.title} onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })} />
                 <DatePicker placeholderText="Start Date" style={{ marginRight: "10px" }} selected={newEvent.start} onChange={(start) => setNewEvent({ ...newEvent, start })} />
                 <DatePicker placeholderText="End Date" selected={newEvent.end} onChange={(end) => setNewEvent({ ...newEvent, end })} />
                 <button stlye={{ marginTop: "10px" }} onClick={handleAddEvent}>
