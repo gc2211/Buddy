@@ -39,7 +39,7 @@ return (
         <FaCity
           className='city-icon'
         />
-        <span>Miami</span>  
+        <span>Miami,FL</span>  
           </div> 
         <div className='social-media'>
           <a href='https://www.instagram.com/' className='icon-circle'>
