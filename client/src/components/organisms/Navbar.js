@@ -16,22 +16,26 @@ function Navbar() {
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLinkContainer>
-            <NavbarLink to="/home">  <AiOutlineHome
-         
+            <NavbarLink to="/home">  
+            <AiOutlineHome
           className='home-icon'
-        /></NavbarLink>
-            <NavbarLink to="/map"> <BiWorld
-         
+        />
+        </NavbarLink>
+            <NavbarLink to="/map"> 
+            <BiWorld
          className='map-icon'
-       /></NavbarLink>
-            <NavbarLink to="/calendars"><BsCalendarWeek
-         
+       />
+       </NavbarLink>
+            <NavbarLink to="/calendars">
+              <BsCalendarWeek
          className='events-icon'
-       /></NavbarLink>
-			      <NavbarLink to="/profile"><CgProfile
-         
+       />
+       </NavbarLink>
+			      <NavbarLink to="/profile">
+              <CgProfile
          className='profile-icon'
-       /></NavbarLink>
+       />
+       </NavbarLink>
             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);
