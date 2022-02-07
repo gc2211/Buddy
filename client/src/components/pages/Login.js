@@ -9,11 +9,11 @@ function Login(){
 
        <label>Username</label>
       <input
-        type="type here"
+        type=""
       />
       <label className="labellogin">Password</label>
       <input
-        type="password"
+        type=""
         
       />
       <button className="login-btn"> Login </button>

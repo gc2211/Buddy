@@ -5,9 +5,10 @@ import Map from "./components/pages/Map";
 import Home from "./components/pages/Home";
 import Calendars from "./components/pages/Calendars";
 import Login from "components/pages/Login";
+import Registration from "components/pages/Registration";
 import Footer from "./components/atoms/Footer";
 import "./App.css";
-
+ 
   
 const App = () => {
 
@@ -15,7 +16,8 @@ return (
 		<div className="App">
 			<Navbar/>
 			<Switch>
- 				<Route exact path="/" component={Login}/>
+			    <Route exact path="/" component={Registration}/>
+ 				<Route exact path="/login" component={Login}/>
 			    <Route exact path="/home" component={Home}/>
 			    <Route exact path="/map" component={Map}/>
 				<Route exact path="/calendars" component={Calendars}/>
