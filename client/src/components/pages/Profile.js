@@ -60,10 +60,10 @@ return (
         <br/>     
         <br/>     
        <div className='upevents'>
-       <h3>Upcoming events:</h3>
+       <h3>Upcoming events</h3>
        </div>
        <div className='pastevents'>
-       <h3>Pasts events:</h3>
+       <h3>Pasts events</h3>
        </div>
        </form>
        <div className='edit'>

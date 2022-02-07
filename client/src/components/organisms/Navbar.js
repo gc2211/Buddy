@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import {BiWorld} from "react-icons/bi";
 import {CgProfile} from "react-icons/cg";
-import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineLogout } from "react-icons/ai";
 import {BsCalendarWeek} from "react-icons/bs"
 
 
@@ -36,6 +36,11 @@ function Navbar() {
          className='profile-icon'
        />
        </NavbarLink>
+			      <NavbarLink to="/logout">
+              <AiOutlineLogout
+         className='logout-icon'
+       />
+       </NavbarLink>
             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);
@@ -57,6 +62,7 @@ function Navbar() {
           <NavbarLinkExtended to="/map"> Map</NavbarLinkExtended>
           <NavbarLinkExtended to="/calendars"> Calendar</NavbarLinkExtended>
           <NavbarLinkExtended to="/profile"> Profile</NavbarLinkExtended>
+          <NavbarLinkExtended to="/login"> Logout</NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
