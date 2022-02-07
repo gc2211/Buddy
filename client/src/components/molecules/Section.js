@@ -10,6 +10,8 @@ const Section = (props) => {
 			<H2>{props.city}</H2>
 			<H2>{props.province}</H2>
 			<H2>{props.image_url}</H2>
+			<H2>{props.email}</H2>
+			<H2>{props.biography}</H2>
 		</section>
 	)
 };

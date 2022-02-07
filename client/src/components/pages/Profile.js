@@ -1,5 +1,8 @@
-import React,{ useState }  from 'react';
+import React,{ useState , useContext}  from 'react';
+import {context} from "../../context/APIProvider";
 import "styles/myprofile.scss";
+import {nanoid} from "nanoid";
+import Section from "../molecules/Section";
 import image from "images/collin.png";
 import UserProfile from "components/organisms/UserProfile";
 import {FaLanguage, FaUserEdit} from 'react-icons/fa';
@@ -7,12 +10,13 @@ import {FaCity} from 'react-icons/fa';
 import {AiFillInstagram} from 'react-icons/ai';
  
   
-  const Profile = ({ profiles, completeProfile, removeProfile, updateProfile }) => {
+  const Profile = (props)=> {
+    const APIContext = useContext(context);
     const [profile, setProfile] = useState({
       id: null,
       value: ''
     });
-
+ 
  
      
 return (
@@ -52,9 +56,8 @@ return (
        <form>
          <div className='col'>
          <div  className='form-group'>
-           <label>Biography</label>
-           <textarea></textarea>
-         </div>
+           <label>Biography</label>     
+        </div> 
         </div> 
         <br/> 
         <br/>     
@@ -66,14 +69,11 @@ return (
        <h3>Pasts events</h3>
        </div>
        </form>
-       <div className='edit'>
-       <FaUserEdit
-          onClick={() => setProfile({ id: profile.id, value: profile.text })}
-          className='edit-icon'
-        />
-       </div>
        </div>
      </>
   )
 }
  export default Profile;
+
+ 
+		

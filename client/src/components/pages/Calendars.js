@@ -2,7 +2,7 @@ import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import DatePicker from "react-datepicker";
@@ -41,6 +41,16 @@ function Calendars() {
     function handleAddEvent() {
         setAllEvents([...allEvents, newEvent]);
     }
+
+    useEffect(() => {
+        const data = localStorage.getItem("event");
+        if (data) {
+          setNewEvent(JSON.parse(data));
+        }
+      }, []);
+    useEffect(() => {
+        localStorage.setItem("event", JSON.stringify(newEvent));
+      });
     return (
         <div className="App">
             <h1>Browse events</h1>
