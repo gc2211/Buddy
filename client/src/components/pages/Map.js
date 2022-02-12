@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import golfData from "data/golfData";
-import image from "images/collin.png";
-import UserProfile from "components/organisms/UserProfile";
-import {GrValidate} from 'react-icons/gr';
+import { BsFillPatchPlusFill } from "react-icons/bs";
+ 
 
-
-export default function App() {
+export default function App(props) {
   const [viewport, setViewport] = useState({
     latitude: 25.7616798,
     longitude: -80.1917902,
     width: "100vw",
     height: "100vh",
-    zoom: 10
+    zoom: 8
   });
   const [selectedGolf, setSelectedGolf] = useState(null);
   useEffect(() => {
@@ -26,6 +24,12 @@ export default function App() {
       window.removeEventListener("keydown", listener);
     };
   }, []);
+
+  const [isFavorite, setIsFavorite] = React.useState(props.isFavorite);
+  const handleClickFavorite = () => {
+    setIsFavorite(!isFavorite);
+  };
+
   return (
     <div>
       <ReactMapGL
@@ -67,17 +71,16 @@ export default function App() {
             <div>
               <h2>{selectedGolf.attributes.NAME}</h2>
               <p>{selectedGolf.attributes.WEBSITE}</p>
-              <p>Upcoming events:</p>
-              <p>05/04/2022</p>
-              <p>Organised by:</p>
-              <UserProfile
-            username="Collin Morikawa"
-            iconSize="medium"
-             image={image}
-        />
-        <GrValidate
-        className='validate-icon'
-       />
+              <div id="favorite"
+               onClick={handleClickFavorite}
+              className={isFavorite ? "isFavorite" : "notFavorite"}
+              isFavorite={selectedGolf.isFavorite} 
+              ></div>
+              <p>Events :</p>
+            <a href="/calendars" >
+            <BsFillPatchPlusFill 
+            />
+            </a>
             </div>
           </Popup>
         ) : null}

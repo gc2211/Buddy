@@ -6,6 +6,7 @@ import UserProfile from "components/organisms/UserProfile";
 import {FaLanguage} from 'react-icons/fa';
 import {FaCity} from 'react-icons/fa';
 import {AiFillInstagram} from 'react-icons/ai';
+
  
   
 const Profile = (props)=> {
