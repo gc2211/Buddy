@@ -19,8 +19,8 @@
 ## :✨ : Descritpion: 
 
 <p> A platform where users can freely enjoy their hobbies with like minded people.
-Save time when searching for new friends and make long lasting memories.
-Create event based on your timetable. </p>
+Save time when looking for new friends and make long lasting memories.
+Create events based on your schedule. </p>
 
 <h2>License</h2>
 See the <a href="https://github.com/gc2211/Buddy/blob/main/LICENSE">LICENSE</a> for license rights and limitations (MIT)
