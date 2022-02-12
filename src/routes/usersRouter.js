@@ -1,13 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const pool = require('../conf');
-
-
-
 // Read all users
-
 router.get('/', (req, res) => {
-
 	
 //Getting a connection from the pool
 pool.getConnection((err, connection) => {
@@ -24,22 +19,16 @@ pool.getConnection((err, connection) => {
 				res.status(200).send(data);
 			}
 		});
-
 		//Realising the connection.
 		connection.release();
-
 		// Handle error after the release.
 		if (err) console.error(err);
-
 		// Don't use the connection here, it has been returned to the pool.
 	})
 });
-
 //Read users by id
-
 router.get('/:id', (req, res) => {
 	console.log("hello");
-
 	//Getting a connection from the pool
 	pool.getConnection((err, connection) => {
 		// Not connected!
@@ -55,27 +44,19 @@ router.get('/:id', (req, res) => {
 				res.status(200).send(data);
 			}
 		});
-
 		//Realising the connection.
 		connection.release();
-
 		// Handle error after the release.
 		if (err) console.error(err);
-
 		// Don't use the connection here, it has been returned to the pool.
 	})
-
 });
-
  //Create a user
-
  router.post('/', (req, res) => {
-
  console.log(req.body)
 //Getting a connection from the pool
 pool.getConnection((err, connection) => {
 	// Not connected!
-
 	if (err) console.error(err);
 	//Using the connection.
 	//Change the query const according to your needs
@@ -88,29 +69,22 @@ pool.getConnection((err, connection) => {
 			res.status(200).send(data);
 		}
 	});
-
 	//Realising the connection.
 	connection.release();
-
 	// Handle error after the release.
 	if (err) console.error(err);
-
 	// Don't use the connection here, it has been returned to the pool.
   })
-
 });
-
 //Update a user
- 
 router.patch('/:id', (req, res) => {
- 
 	//Getting a connection from the pool
 	pool.getConnection((err, connection) => {
 		// Not connected!
 		if (err) console.error(err);
 		//Using the connection.
 		//Change the query const according to your needs
-	 
+	
 		const query = 'UPDATE users SET ? WHERE id =? '
 		connection.query(query,[req.body,req.params.id],(err, data) => {
 			if (err) {
@@ -120,7 +94,6 @@ router.patch('/:id', (req, res) => {
 				res.status(200).send(data);
 			}
 		});
-
 		//Realising the connection.
 		connection.release();
 	
@@ -131,18 +104,15 @@ router.patch('/:id', (req, res) => {
 	  })
 	
 	});
-  
 	//Delete a user
- 
 	router.delete('/:id', (req, res) => {
- 
 		//Getting a connection from the pool
 		pool.getConnection((err, connection) => {
 			// Not connected!
 			if (err) console.error(err);
 			//Using the connection.
 			//Change the query const according to your needs
-		 
+		
 		    const query = 'DELETE FROM users WHERE id = ?'
 		    connection.query(query,[req.params.id],(err, data) => {
 			if (err) {
@@ -163,6 +133,5 @@ router.patch('/:id', (req, res) => {
 			// Don't use the connection here, it has been returned to the pool.
 		  })
 		
-		}); 
-
+		});
 module.exports = router;

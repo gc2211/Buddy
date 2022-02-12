@@ -10,7 +10,7 @@ function Cards() {
       <Card
         accountName="Shawn Lowry"
         storyBorder={true}
-        image="https://cdn-lejdd.lanmedia.fr/var/europe1/storage/images/lejdd/sport/golf/ryder-cup-de-golf-le-numero-1-mondial-espagnol-jon-rahm-suffira-t-il-pour-battre-les-americains-4067318/57634971-1-fre-FR/Ryder-Cup-de-golf-le-numero-1-mondial-espagnol-Jon-Rahm-suffira-t-il-pour-battre-les-Americains.jpg"
+        image="https://nypost.com/wp-content/uploads/sites/2/2021/08/obama-birthday-golf-4.jpg?quality=80&strip=all&w=1024"
       
       />
       <Card
@@ -40,6 +40,24 @@ function Cards() {
     accountName="Shawn Lowry"
     storyBorder={true}
     image="https://www.nouvellespublications.com/content/articles/964/main_france-golf-fd.jpg"
+    
+  /> 
+  <Card
+    accountName="Shawn Lowry"
+    storyBorder={true}
+    image="https://www.golfdigest.com/content/dam/images/golfdigest/fullset/2020/02/19/5e4d6185308e1500085798bc_GD030120_FEAT_BUDDIES_16.jpg"
+    
+  /> 
+  <Card
+    accountName="Shawn Lowry"
+    storyBorder={true}
+    image="https://tv-fanatic-res.cloudinary.com/iu/s--B78CtnDf--/f_auto,q_auto/v1539053443/golf-buddies-magnum-pi-s1e3"
+    
+  /> 
+  <Card
+    accountName="Shawn Lowry"
+    storyBorder={true}
+    image="https://images.bfmtv.com/0vwDjmFG3hFjhLQ4ef8yL0cepIs=/0x40:1024x616/images/-476934.jpg"
     
   /> 
 

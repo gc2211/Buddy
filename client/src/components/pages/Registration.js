@@ -20,7 +20,9 @@ function Registration(){
         type=""
         
       />
+      <a href="/login">
       <button className="registration-btn"> Register </button>
+      </a>
     </div>
   )
 }

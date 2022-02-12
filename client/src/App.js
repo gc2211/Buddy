@@ -14,7 +14,7 @@ const App = () => {
 
 return (
 		<div className="App">
-			<Navbar/>
+		<Navbar/>
 			<Switch>
 			    <Route exact path="/" component={Registration}/>
  				<Route exact path="/login" component={Login}/>

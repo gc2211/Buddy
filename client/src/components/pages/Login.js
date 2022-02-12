@@ -16,8 +16,8 @@ function Login(){
         type=""
         
       />
-      <button className="login-btn"> Login </button>
-    </div>
+       <button className="login-btn" > Login </button>
+     </div>
   )
 }
 export default Login;

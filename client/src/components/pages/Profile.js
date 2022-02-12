@@ -1,24 +1,16 @@
-import React,{ useState , useContext}  from 'react';
-import {context} from "../../context/APIProvider";
+import React from 'react';
 import "styles/myprofile.scss";
-import {nanoid} from "nanoid";
-import Section from "../molecules/Section";
+import "styles/sidebar.scss";
 import image from "images/collin.png";
 import UserProfile from "components/organisms/UserProfile";
-import {FaLanguage, FaUserEdit} from 'react-icons/fa';
+import {FaLanguage} from 'react-icons/fa';
 import {FaCity} from 'react-icons/fa';
 import {AiFillInstagram} from 'react-icons/ai';
  
   
-  const Profile = (props)=> {
-    const APIContext = useContext(context);
-    const [profile, setProfile] = useState({
-      id: null,
-      value: ''
-    });
- 
- 
+const Profile = (props)=> {
      
+       
 return (
 <>
        <div id="profile-container">
@@ -30,7 +22,7 @@ return (
          <UserProfile
             username="Collin Morikawa"
             iconSize="big"
-            image={image}
+             image={image}
         /> 
         </div>      
          <div className='icon-text'>
@@ -56,19 +48,10 @@ return (
        <form>
          <div className='col'>
          <div  className='form-group'>
-           <label>Biography</label>     
+           <label>About</label>     
         </div> 
         </div> 
-        <br/> 
-        <br/>     
-        <br/>     
-       <div className='upevents'>
-       <h3>Upcoming events</h3>
-       </div>
-       <div className='pastevents'>
-       <h3>Pasts events</h3>
-       </div>
-       </form>
+        </form>
        </div>
      </>
   )

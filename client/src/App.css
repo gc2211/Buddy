@@ -67,3 +67,7 @@
 .registrationContainer input {
   border: 2px solid rgb(234, 238, 241);
 }
+
+.profile-user{
+  font-size: 1.5em;
+}
