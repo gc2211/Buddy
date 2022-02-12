@@ -40,8 +40,8 @@ export default function App(props) {
           setViewport(viewport);
         }}
       >
-         <a href="/calendars"> 
-        <button>Events</button>
+         <a href="/event"> 
+        <button>Browse events</button>
         </a>
         {golfData.features.map(golf => (
           <Marker
@@ -77,7 +77,7 @@ export default function App(props) {
               isFavorite={selectedGolf.isFavorite} 
               ></div>
               <p>Events :</p>
-            <a href="/calendars" >
+            <a href="/event" >
             <BsFillPatchPlusFill 
             />
             </a>

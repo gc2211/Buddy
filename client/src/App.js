@@ -3,7 +3,7 @@ import Navbar from "./components/organisms/Navbar";
 import Profile from "./components/pages/Profile";
 import Map from "./components/pages/Map";
 import Home from "./components/pages/Home";
-import Calendars from "./components/pages/Calendars";
+import Event from "./components/pages/Event";
 import Login from "components/pages/Login";
 import Registration from "components/pages/Registration";
 import Footer from "./components/atoms/Footer";
@@ -20,7 +20,7 @@ return (
  				<Route exact path="/login" component={Login}/>
 			    <Route exact path="/home" component={Home}/>
 			    <Route exact path="/map" component={Map}/>
-				<Route exact path="/calendars" component={Calendars}/>
+				<Route exact path="/event" component={Event}/>
 				<Route exact path="/profile" component={Profile}/>
 				<Route path="/*" component={Login}/>
 			</Switch>

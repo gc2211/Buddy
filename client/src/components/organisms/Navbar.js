@@ -26,7 +26,7 @@ function Navbar() {
          className='map-icon'
        />
        </NavbarLink>
-            <NavbarLink to="/calendars">
+            <NavbarLink to="/event">
               <BsCalendarWeek
          className='events-icon'
        />
@@ -60,7 +60,7 @@ function Navbar() {
         <NavbarExtendedContainer>
           <NavbarLinkExtended to="/home"> Home</NavbarLinkExtended>
           <NavbarLinkExtended to="/map"> Map</NavbarLinkExtended>
-          <NavbarLinkExtended to="/calendars"> Calendar</NavbarLinkExtended>
+          <NavbarLinkExtended to="/event"> Event</NavbarLinkExtended>
           <NavbarLinkExtended to="/profile"> Profile</NavbarLinkExtended>
           <NavbarLinkExtended to="/login"> Logout</NavbarLinkExtended>
         </NavbarExtendedContainer>

@@ -35,7 +35,7 @@ const events = [
         end: new Date(2021, 6, 23),
     },
 ];
-function Calendars() {
+function Event() {
     const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
     const [allEvents, setAllEvents] = useState(events);
     function handleAddEvent() {
@@ -53,8 +53,7 @@ function Calendars() {
       });
     return (
         <div className="App">
-            <h1>Browse events</h1>
-            <h2>Add your event below to meet new Buddies</h2>
+            <h2>Publish an event and meet new Buddies</h2>
             <div>
                 <input type="text" placeholder="Add your event" style={{ width: "20%", marginRight: "10px" }} value={newEvent.title} onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })} />
                 <DatePicker placeholderText="Start Date" style={{ marginRight: "10px" }} selected={newEvent.start} onChange={(start) => setNewEvent({ ...newEvent, start })} />
@@ -67,4 +66,4 @@ function Calendars() {
         </div>
     );
 }
-export default Calendars;
+export default Event;
