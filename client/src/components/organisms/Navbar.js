@@ -1,15 +1,24 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import {onAuthStateChanged,
+  signOut,
+} from "firebase/auth";
+import { auth } from "firebase-config";
 import { Link } from "react-router-dom";
 import {BiWorld} from "react-icons/bi";
 import {CgProfile} from "react-icons/cg";
 import { AiOutlineHome, AiOutlineLogout } from "react-icons/ai";
 import {BsCalendarWeek} from "react-icons/bs"
 
-
-
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
+  const [user, setUser] = useState({});
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
+  const logout = async () => {
+    await signOut(auth);
+  };
 
   return (
     <NavbarContainer extendNavbar={extendNavbar}>
@@ -38,7 +47,7 @@ function Navbar() {
        </NavbarLink>
 			      <NavbarLink to="/logout">
               <AiOutlineLogout
-         className='logout-icon'
+         className='logout-icon'onClick={logout}
        />
        </NavbarLink>
             <OpenLinksButton
@@ -50,6 +59,9 @@ function Navbar() {
             </OpenLinksButton>
           </NavbarLinkContainer>
         </LeftContainer>
+        <NavbarLink>
+        <h4>{user?.email}</h4>
+        </NavbarLink>
         <RightContainer>
          <a href="/home"> 
         <Logo src="https://i.ibb.co/1spqpB3/buddy.png" alt="logo" height="auto" width="auto" />
@@ -153,4 +165,4 @@ export const NavbarExtendedContainer = styled.div`
     display: none;
   }
 `;
-
+ 
