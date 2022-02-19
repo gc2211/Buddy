@@ -36,14 +36,12 @@ return (
             <FaLanguage
           className='language-icon'
         /> 
-        <span>English</span>  
-          </div> 
+           </div> 
         <div className='icon-text'>
         <FaCity
           className='city-icon'
         />
-        <span>Miami,FL</span>  
-          </div> 
+           </div> 
         <div className='social-media'>
           <a href='https://www.instagram.com/' className='icon-circle'>
           <AiFillInstagram

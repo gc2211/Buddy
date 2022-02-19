@@ -46,14 +46,17 @@ function Register() {
          console.log(error.message);    }  };
 return (    
 <div className="loginContainer">      
-<img src={buddytpng} alt="logo-buddy" height="150"/>
-   <h3> Create your profile</h3>        
+<img src="/golf.svg" alt="Golf icon" height="100px"/>   
+<h3> Create your profile</h3>        
    <input placeholder="Username..."/> 
    <input placeholder="Email..." onChange={(event) => {            
      setRegisterEmail(event.target.value);          }}/>       
       <input placeholder="Password..." onChange={(event) => {            
         setRegisterPassword(event.target.value);}}/>
-         <button onClick={register}> Register</button>  
+         <button onClick={register}> Register</button> 
+         <a href="/login">
+         <p>Already have an account ?</p>
+         </a> 
     </div> 
  )
 }

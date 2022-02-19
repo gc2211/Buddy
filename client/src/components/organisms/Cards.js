@@ -13,9 +13,7 @@ function Cards() {
         image="https://nypost.com/wp-content/uploads/sites/2/2021/08/obama-birthday-golf-4.jpg?quality=80&strip=all&w=1024"
       
       />
-      <header>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-gk30dZJskeXxmDulY42GCaw1sZXaKFQSmg&usqp=CAU" alt="business"  height="160px" width="300px"/>
-      </header>
+      
       <Card
         accountName="Phil Mickelsson"
         image="https://cdn-japantimes.com/wp-content/uploads/2021/06/np_file_93743.jpeg"
@@ -27,8 +25,8 @@ function Cards() {
         image="https://www.terratrail.fr/wp-content/uploads/2019/01/distance-parcourue-golf.jpg"
          
       /> 
-      <header>
-        <img src="https://privateclubagency.com/wp-content/uploads/2019/03/google-golf.jpg" alt="business"  height="160px" width="300px"/>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-gk30dZJskeXxmDulY42GCaw1sZXaKFQSmg&usqp=CAU" alt="business"  height="160px" width="300px"/>
       </header>
        <Card
         accountName="Tom Keipert"

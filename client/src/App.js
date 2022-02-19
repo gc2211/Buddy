@@ -14,15 +14,15 @@ const App = () => {
 
 return (
 		<div className="App">
-	      	<Navbar/>
+			<Navbar/>
 			<Switch>
 		        <Route exact path="/register" component={Register}/>
  			    <Route exact path="/login" component={Login}/>
-			    <Route exact path="/home" component={Home}/>
-			    <Route exact path="/map" component={Map}/>
-				<Route exact path="/event" component={Event}/>
-				<Route exact path="/profile" component={Profile}/>
-				<Route path="/*" component={Login}/>
+				<Route exact path="/home" component={Home} />
+				<Route exact path="/map" component={Map} />
+				<Route exact path="/event" component={Event} />
+				<Route exact path="/profile" component={Profile} />
+				<Route path="/*" component={Register}/>
 			</Switch>
 			<Footer/>
 		</div>
