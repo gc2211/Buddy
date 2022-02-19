@@ -13,6 +13,9 @@ function Cards() {
         image="https://nypost.com/wp-content/uploads/sites/2/2021/08/obama-birthday-golf-4.jpg?quality=80&strip=all&w=1024"
       
       />
+      <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-gk30dZJskeXxmDulY42GCaw1sZXaKFQSmg&usqp=CAU" alt="business"  height="160px" width="300px"/>
+      </header>
       <Card
         accountName="Phil Mickelsson"
         image="https://cdn-japantimes.com/wp-content/uploads/2021/06/np_file_93743.jpeg"
@@ -23,13 +26,17 @@ function Cards() {
         storyBorder={true}
         image="https://www.terratrail.fr/wp-content/uploads/2019/01/distance-parcourue-golf.jpg"
          
-      />
+      /> 
+      <header>
+        <img src="https://privateclubagency.com/wp-content/uploads/2019/03/google-golf.jpg" alt="business"  height="160px" width="300px"/>
+      </header>
        <Card
         accountName="Tom Keipert"
         storyBorder={true}
         image="https://chesapeakegolf.com/wp-content/uploads/2014/03/GolfBuddies.jpg"
         
       /> 
+      
       <Card
       accountName="Dustin Johnsson"
       storyBorder={true}
@@ -42,6 +49,9 @@ function Cards() {
     image="https://www.nouvellespublications.com/content/articles/964/main_france-golf-fd.jpg"
     
   /> 
+    <header>
+        <img src="https://privateclubagency.com/wp-content/uploads/2019/03/google-golf.jpg" alt="business"  height="160px" width="300px"/>
+      </header>
   <Card
     accountName="Shawn Lowry"
     storyBorder={true}
@@ -54,6 +64,9 @@ function Cards() {
     image="https://tv-fanatic-res.cloudinary.com/iu/s--B78CtnDf--/f_auto,q_auto/v1539053443/golf-buddies-magnum-pi-s1e3"
     
   /> 
+   <header>
+        <img src="https://www.steeplechasegolf.com/wp-content/uploads/sites/4746/2015/12/image007.jpg" alt="business"  height="230px" width="330px"/>
+      </header>
   <Card
     accountName="Shawn Lowry"
     storyBorder={true}

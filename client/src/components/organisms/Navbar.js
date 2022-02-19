@@ -60,7 +60,7 @@ function Navbar() {
           </NavbarLinkContainer>
         </LeftContainer>
         <NavbarLink>
-        <h4>{user?.email}</h4>
+        <h6>{user?.email}</h6>
         </NavbarLink>
         <RightContainer>
          <a href="/home"> 

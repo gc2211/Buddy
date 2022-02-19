@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import "styles/myprofile.scss";
 import "styles/sidebar.scss";
 import image from "images/collin.png";
@@ -6,11 +6,17 @@ import UserProfile from "components/organisms/UserProfile";
 import {FaLanguage} from 'react-icons/fa';
 import {FaCity} from 'react-icons/fa';
 import {AiFillInstagram} from 'react-icons/ai';
+import {onAuthStateChanged} from "firebase/auth";
+import { auth } from "firebase-config";
 
  
   
-const Profile = (props)=> {
-     
+const Profile = ()=> {
+  const [user, setUser] = useState({});
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
+  
        
 return (
 <>
@@ -21,7 +27,7 @@ return (
          </h4>
          <div className='profile-user'>
          <UserProfile
-            username="Collin Morikawa"
+            username={user?.email}
             iconSize="big"
              image={image}
         /> 

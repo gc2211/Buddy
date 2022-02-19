@@ -30,17 +30,17 @@ export default Registration;*/
 
 import { useState } from "react";
 import buddytpng from "images/buddyt.png";
-import {  createUserWithEmailAndPassword,  onAuthStateChanged} from "firebase/auth";
+import { createUserWithEmailAndPassword} from "firebase/auth";
 import { auth } from "firebase-config";
 
-function Registration() {  
-  const [registerEmail, setRegisterEmail] = useState("");  
+function Register() {  
+  const [registerEmail, setRegisterEmail] = useState(""); 
   const [registerPassword, setRegisterPassword] = useState("");  
   const register = async () => {    
     try {      
       const user = await createUserWithEmailAndPassword(       
        auth,        
-       registerEmail,        
+       registerEmail,
        registerPassword      );      
        console.log(user);    } catch (error) {      
          console.log(error.message);    }  };
@@ -48,12 +48,13 @@ return (
 <div className="loginContainer">      
 <img src={buddytpng} alt="logo-buddy" height="150"/>
    <h3> Create your profile</h3>        
+   <input placeholder="Username..."/> 
    <input placeholder="Email..." onChange={(event) => {            
      setRegisterEmail(event.target.value);          }}/>       
       <input placeholder="Password..." onChange={(event) => {            
         setRegisterPassword(event.target.value);}}/>
-        <button onClick={register}> Register</button>      
+         <button onClick={register}> Register</button>  
     </div> 
  )
 }
-export default Registration;
+export default Register;
