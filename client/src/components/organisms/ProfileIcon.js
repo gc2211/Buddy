@@ -1,25 +1,23 @@
 import "styles/profileIcon.scss";
-
-function ProfileIcon(props) {
-  const { iconSize, storyBorder, image } = props;
-
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  let randomId = getRandomInt(1, 70);
-
-  let profileImage = image
+import usersData from "data/usersData";
+  
+  function ProfileIcon(props) {
+    const {
+      iconSize,
+      storyBorder,
+      image,
+    } = props;
+  
+ 
+    let accountImage = image
     ? image
-    : `https://i.pravatar.cc/150?img=${randomId}`;
+    : usersData[Math.floor(Math.random() * usersData.length)].image_url;
 
   return (
     <div className={storyBorder ? "storyBorder" : ""}>
       <img
         className={`profileIcon ${iconSize}`}
-        src={profileImage}
+        src={accountImage}
         alt="profile"
       />
     </div>
@@ -27,3 +25,5 @@ function ProfileIcon(props) {
 }
 
 export default ProfileIcon;
+
+ 

@@ -4,20 +4,18 @@ import usersData from "data/usersData";
 
 function UserProfile(props) {
   const {
-    username,
-    caption,
-    urlText,
+    firstname,
     iconSize,
-    captionSize,
     storyBorder,
     hideAccountName,
     image,
   } = props;
 
-  let accountName = username
-    ? username
-    : usersData[Math.floor(Math.random() * usersData.length)].username;
+  let accountName = firstname
+    ? firstname
+    : usersData[Math.floor(Math.random() * usersData.length)].firstname;
 
+   
   return (
     <div className="profile">
       <ProfileIcon
@@ -25,15 +23,14 @@ function UserProfile(props) {
         storyBorder={storyBorder}
         image={image}
       />
-      {(accountName || caption) && !hideAccountName && (
+      {(accountName ) && !hideAccountName && (
         <div className="textContainer">
           <span className="accountName">{accountName}</span>
-          <span className={`caption ${captionSize}`}>{caption}</span>
-        </div>
+         </div>
       )}
-      <a href="/">{urlText}</a>
-    </div>
+     </div>
   );
 }
 
 export default UserProfile;
+ 

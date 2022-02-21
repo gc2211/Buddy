@@ -29,7 +29,6 @@ function Registration(){
 export default Registration;*/
 
 import { useState } from "react";
-import buddytpng from "images/buddyt.png";
 import { createUserWithEmailAndPassword} from "firebase/auth";
 import { auth } from "firebase-config";
 
