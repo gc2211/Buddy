@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import golfData from "data/golfData";
 import { BsFillPatchPlusFill } from "react-icons/bs";
- 
+  
 
-export default function App(props) {
+function Map(props) {
   const [viewport, setViewport] = useState({
     latitude: 25.7616798,
     longitude: -80.1917902,
@@ -88,3 +88,4 @@ export default function App(props) {
     </div>
   );
 }
+export default Map;

@@ -1,21 +1,26 @@
 import React ,{useState} from 'react';
 import "styles/myprofile.scss";
 import "styles/sidebar.scss";
-import image from "images/collin.png";
-import UserProfile from "components/organisms/UserProfile";
 import {FaLanguage} from 'react-icons/fa';
 import {FaCity} from 'react-icons/fa';
 import {AiFillInstagram} from 'react-icons/ai';
 import {onAuthStateChanged} from "firebase/auth";
 import { auth } from "firebase-config";
-
+import {context} from "context/APIProvider";
+import {nanoid} from "nanoid";
+import {useContext} from "react";
+import usersData from "data/usersData";
+import UserProfile from "components/organisms/UserProfile";
+ 
  
   
-const Profile = ()=> {
+const Profile =(props) => {
+
   const [user, setUser] = useState({});
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });
+    const APIContext = useContext(context);
   
        
 return (
@@ -28,8 +33,7 @@ return (
          <div className='profile-user'>
          <UserProfile
             username={user?.email}
-            iconSize="big"
-             image={image}
+
         /> 
         </div>      
          <div className='icon-text'>
@@ -53,7 +57,18 @@ return (
        <form>
          <div className='col'>
          <div  className='form-group'>
-           <label>About</label>     
+           <label>About</label>         
+           {APIContext.usersIsFetched
+				? <ol>
+					{APIContext.usersData.data.map((element) => (
+						<li key={nanoid()}>
+								<span>
+									{`Biography: ${element.biography} - `}
+								</span>
+						</li>
+					))}
+				</ol>
+				: <p>loading...</p>} 
         </div> 
         </div> 
         </form>
@@ -63,5 +78,4 @@ return (
 }
  export default Profile;
 
- 
-		
+  

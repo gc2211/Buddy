@@ -27,7 +27,6 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
 } from "firebase/auth";
-import buddytpng from "images/buddyt.png";
 import { auth } from "firebase-config";
 function Login() {
   const [loginEmail, setLoginEmail] = useState("");
@@ -52,7 +51,7 @@ function Login() {
   
   return (
     <div className="loginContainer">
-     <img src={buddytpng} alt="logo-buddy" height="150"/>
+<img src="/golf.svg" alt="Golf icon" height="100px"/>   
         <h3> Login </h3>
         <input
           placeholder="Email..."
@@ -67,6 +66,9 @@ function Login() {
           }}
         />
          <button onClick={login}> Login</button>
+         <a href="/register">
+         <p>Sign up</p>
+         </a> 
       </div>
   );
 }

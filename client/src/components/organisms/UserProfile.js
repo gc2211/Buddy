@@ -1,6 +1,6 @@
 import "styles/profile.scss";
 import ProfileIcon from "./ProfileIcon";
-import users from "data/users";
+import usersData from "data/usersData";
 
 function UserProfile(props) {
   const {
@@ -16,7 +16,7 @@ function UserProfile(props) {
 
   let accountName = username
     ? username
-    : users[Math.floor(Math.random() * users.length)].username;
+    : usersData[Math.floor(Math.random() * usersData.length)].username;
 
   return (
     <div className="profile">
