@@ -26,14 +26,9 @@ return (
 <>
        <div id="profile-container">
        <div className='profile-info'>
-         <h4>
-           Profile  
-         </h4>
+       <h5>{localStorage.getItem("name")}</h5>
          <div className='profile-user'>
-         <UserProfile
-            username={user?.email}
-
-        /> 
+         <image src={localStorage.getItem("profilePic")}/>
         </div>      
          <div className='icon-text'>
             <FaLanguage

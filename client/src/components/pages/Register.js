@@ -40,7 +40,8 @@ function Register() {
       const user = await createUserWithEmailAndPassword(       
        auth,        
        registerEmail,
-       registerPassword      );      
+       registerPassword      
+       );      
        console.log(user);    } catch (error) {      
          console.log(error.message);    }  };
 return (    
@@ -60,3 +61,5 @@ return (
  )
 }
 export default Register;
+
+ 
