@@ -9,8 +9,7 @@ import { auth } from "firebase-config";
 import {context} from "context/APIProvider";
 import {nanoid} from "nanoid";
 import {useContext} from "react";
-import UserProfile from "components/organisms/UserProfile";
- 
+  
  
   
 const Profile =(props) => {

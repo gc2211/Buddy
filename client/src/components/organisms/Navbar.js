@@ -9,6 +9,10 @@ import {BiWorld} from "react-icons/bi";
 import {CgProfile} from "react-icons/cg";
 import { AiOutlineHome, AiOutlineLogout } from "react-icons/ai";
 import {BsCalendarWeek} from "react-icons/bs"
+import {Button } from "react-bootstrap"
+import { useAuth } from "context/AuthContext"
+import { useHistory } from "react-router-dom"
+ 
 
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
@@ -16,9 +20,18 @@ function Navbar() {
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });
-  const logout = async () => {
-    await signOut(auth);
-  };
+  const [error, setError] = useState("")
+  const { logout } = useAuth()
+  const history = useHistory()
+  async function handleLogout() {
+    setError("")
+    try {
+      await logout()
+      history.push("/login")
+    } catch {
+      setError("Failed to log out")
+    }
+  }
 
   return (
     <NavbarContainer extendNavbar={extendNavbar}>
@@ -45,12 +58,10 @@ function Navbar() {
          className='profile-icon'
        />
        </NavbarLink>
-			      <NavbarLink to="/logout">
-              <AiOutlineLogout
-         className='logout-icon'onClick={logout}
-       />
-       </NavbarLink>
-            <OpenLinksButton
+       < NavbarLink variant="link" onClick={handleLogout}>
+        <AiOutlineLogout className="logout"/>
+        </NavbarLink>
+             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);
               }}
@@ -60,8 +71,7 @@ function Navbar() {
           </NavbarLinkContainer>
         </LeftContainer>
         <NavbarLink>
-        <h6>{user?.email}</h6>
-        </NavbarLink>
+         </NavbarLink>
         <RightContainer>
          <a href="/home"> 
         <Logo src="https://i.ibb.co/1spqpB3/buddy.png" alt="logo" height="auto" width="auto" />

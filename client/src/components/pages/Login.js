@@ -1,28 +1,4 @@
-/*import React from "react";
-import buddytpng from "images/buddyt.png";
-   
-function Login(){
-  return (
-    
-    <div className="loginContainer">
-     <img src={buddytpng} alt="logo-buddy" height="150"/>
-
-       <label>Username</label>
-      <input
-        type=""
-      />
-      <label className="labellogin">Password</label>
-      <input
-        type=""
-        
-      />
-       <button className="login-btn" > Login </button>
-     </div>
-  )
-}
-export default Login;*/
-
-import { useState } from "react";
+/*import { useState } from "react";
 import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
@@ -72,4 +48,59 @@ function Login() {
       </div>
   );
 }
+export default Login;*/
+import React, { useRef, useState } from "react"
+import { Button, Alert } from "react-bootstrap"
+import { useAuth } from "context/AuthContext"
+import { Link, useHistory } from "react-router-dom"
+import { signInWithGoogle } from "firebase-config";
+
+function Login() {
+  const emailRef = useRef()
+  const passwordRef = useRef()
+  const { login } = useAuth()
+  const [error, setError] = useState("")
+  const [loading, setLoading] = useState(false)
+  const history = useHistory()
+  async function handleSubmit(e) {
+    e.preventDefault()
+    try {
+      setError("")
+      setLoading(true)
+      await login(emailRef.current.value, passwordRef.current.value)
+      history.push("/")
+    } catch {
+      setError("Failed to log in")
+    }
+    setLoading(false)
+  }
+    return (
+      <div className="loginContainer">
+      <img src="/golf.svg" alt="Golf icon" height="100px"/> 
+            <h2 className="text-center mb-4">Log In</h2>
+            {error && <Alert variant="danger">{error}</Alert>}
+            <form onSubmit={handleSubmit}>
+            <label id="email">
+              E-mail    
+          <input type="email" ref={emailRef} required />
+            </label>
+            <label id="password">
+          Password
+          <input type="password" ref={passwordRef} required />
+            </label>
+            <Button disabled={loading} className="w-100" type="submit">
+                          Log In
+            </Button>
+            <Button class="login-with-google-btn" onClick={signInWithGoogle}>
+        Sign in with Google
+      </Button>
+          </form>
+          <Link to="/forgot-password">Forgot Password?</Link>
+            <p>Need an account?</p>              
+          <Link to="/register" color="black">Sign Up</Link>
+         </div> 
+    )
+  }
 export default Login;
+ 
+  
