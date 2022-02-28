@@ -9,7 +9,6 @@ import {BiWorld} from "react-icons/bi";
 import {CgProfile} from "react-icons/cg";
 import { AiOutlineHome, AiOutlineLogout } from "react-icons/ai";
 import {BsCalendarWeek} from "react-icons/bs"
-import {Button } from "react-bootstrap"
 import { useAuth } from "context/AuthContext"
 import { useHistory } from "react-router-dom"
  

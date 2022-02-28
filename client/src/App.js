@@ -7,7 +7,6 @@ import Event from "components/pages/Event";
 import Login from "components/pages/Login";
 import Register from "components/pages/Register";
 import Footer from "./components/atoms/Footer";
-import ForgotPassword from "components/pages/ForgotPassword";
 import {AuthProvider} from "context/AuthContext";
 import PrivateRoute from "components/pages/PrivateRoute";
 import "./App.css";
@@ -23,15 +22,14 @@ return (
 			<Switch>
 		        <Route exact path="/register" component={Register}/>
  			    <Route exact path="/login" component={Login}/>
-				<Route exact path="/forgot-password" component={ForgotPassword}/>
 				<PrivateRoute path="/home" component={Home} />
 				<PrivateRoute path="/map" component={Map}  />
 				<PrivateRoute path="/event" component={Event} />
 				<PrivateRoute path="/profile" component={Profile}/>
 				<Route path="/*" component={Register}/>
 			</Switch>
+ 			<Footer/>
 			</AuthProvider>
-			<Footer/>
 		</div>
 	)
 };

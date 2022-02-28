@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import {getAuth , signInWithPopup , GoogleAuthProvider , Signout} from 'firebase/auth';
+import {getAuth , signInWithPopup , GoogleAuthProvider } from 'firebase/auth';
 const firebaseConfig = {
     apiKey: "AIzaSyDnYMhgUW81aPAp-8pJoMLQoaYr3KCyOas",
     authDomain: "buddy-c6dd0.firebaseapp.com",
@@ -10,7 +10,7 @@ const firebaseConfig = {
     measurementId: "G-ZSCKWJQHF3"
   };
 
-  const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
 const provider = new GoogleAuthProvider();
