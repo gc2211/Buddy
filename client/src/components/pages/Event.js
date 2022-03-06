@@ -1,4 +1,4 @@
-import format from "date-fns/format";
+/*import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
@@ -19,48 +19,24 @@ const localizer = dateFnsLocalizer({
     getDay,
     locales,
 });
-
 const Event=()=> {
 
-const events = [
-    {
-        title: "Round1",
-        allDay: true,
-        start: new Date(2021, 6, 0),
-        end: new Date(2021, 6, 0),
-    },
-    {
-        title: "Round2",
-        start: new Date(2021, 6, 7),
-        end: new Date(2021, 6, 10),
-    },
-    {
-        title: "Round3",
-        start: new Date(2021, 6, 20),
-        end: new Date(2021, 6, 23),
-    },
-];
+    const events = [
+        {
+            title: "Round1",
+            allDay: true,
+            start: new Date(2021, 6, 0),
+            end: new Date(2021, 6, 0),
+        }
+    ];
+  
     const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
-    const [allEvents, setAllEvents] = useState(events);
+    const [allEvents, setAllEvents] = useState([]);
     function handleAddEvent() {
         setAllEvents([...allEvents, newEvent]);
     }
 
-    useEffect(() => {
-		const savedEvents = JSON.parse(
-			localStorage.getItem('event-data')
-		);
-		if (savedEvents) {
-			setNewEvent(savedEvents);
-		}
-	}, []);
-	useEffect(() => {
-		localStorage.setItem(
-			'event-data',
-			JSON.stringify(newEvent)
-		);
-	}, [newEvent]);
-
+    
     return (
         <div className="App">
             <h2>Publish an event and meet new Buddies</h2>
@@ -83,4 +59,75 @@ const events = [
         </div>
     );
 }
+export default Event;*/
+
+import { useState, useEffect } from 'react';
+import { nanoid } from 'nanoid';
+import NotesList from 'components/organisms/NotesList';
+import Search from 'components/organisms/Search';
+import Header from 'components/organisms/Header';
+const Event = () => {
+	const [notes, setNotes] = useState([
+		{
+			id: nanoid(),
+			text: 'Miami Springs Golf Course : Rory , Jason , Adam',
+			date: '15/01/2022',
+		},
+		{
+			id: nanoid(),
+			text: 'La Gorce Golf Course : Justin, Gauthier, Dustin',
+			date: '28/02/2022',
+		},
+		{
+			id: nanoid(),
+			text: 'Miami Beach Golf Course : Josh , Tom , Collin',
+			date: '29/02/2022',
+		},
+	]);
+	const [searchText, setSearchText] = useState('');
+	const [darkMode, setDarkMode] = useState(false);
+	useEffect(() => {
+		const savedNotes = JSON.parse(
+			localStorage.getItem('react-notes-app-data')
+		);
+		if (savedNotes) {
+			setNotes(savedNotes);
+		}
+	}, []);
+	useEffect(() => {
+		localStorage.setItem(
+			'react-notes-app-data',
+			JSON.stringify(notes)
+		);
+	}, [notes]);
+	const addNote = (text) => {
+		const date = new Date();
+		const newNote = {
+			id: nanoid(),
+			text: text,
+			date: date.toLocaleDateString(),
+		};
+		const newNotes = [...notes, newNote];
+		setNotes(newNotes);
+	};
+	const deleteNote = (id) => {
+		const newNotes = notes.filter((note) => note.id !== id);
+		setNotes(newNotes);
+	};
+	return (
+		<div className={`${darkMode && 'dark-mode'}`}>
+			<div className='container'>
+				<Header handleToggleDarkMode={setDarkMode} />
+				<Search handleSearchNote={setSearchText} />
+				<NotesList
+					notes={notes.filter((note) =>
+						note.text.toLowerCase().includes(searchText)
+					)}
+					handleAddNote={addNote}
+					handleDeleteNote={deleteNote}
+				/>
+			</div>
+		</div>
+	);
+};
 export default Event;

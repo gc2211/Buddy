@@ -25,7 +25,7 @@ return (
 <>
        <div id="profile-container">
        <div className='profile-info'>
-       <h5>{localStorage.getItem("name")}</h5>
+       <h5>{localStorage.getItem("email")}</h5>
          <div className='profile-user'>
          <image src={localStorage.getItem("profilePic")}/>
         </div>      
